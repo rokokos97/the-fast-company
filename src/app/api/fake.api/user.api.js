@@ -1,34 +1,33 @@
-import { professions } from "./professions.api";
-
+import { professionsObject as professions } from "./professions.api";
 const qualities = {
     tedious: {
         _id: "67rdca3eeb7f6fgeed471198",
-        name: "Offered",
+        name: "Нудила",
         color: "primary"
     },
     strange: {
         _id: "67rdca3eeb7f6fgeed471100",
-        name: "Strange",
+        name: "Странный",
         color: "secondary"
     },
     buller: {
         _id: "67rdca3eeb7f6fgeed4711012",
-        name: "Troll",
+        name: "Троль",
         color: "success"
     },
     alcoholic: {
         _id: "67rdca3eeb7f6fgeed471101",
-        name: "Alcoholic",
+        name: "Алкоголик",
         color: "danger"
     },
     handsome: {
         _id: "67rdca3eeb7f6fgeed471102",
-        name: "Handsome",
+        name: "Красавчик",
         color: "info"
     },
     uncertain: {
         _id: "67rdca3eeb7f6fgeed471103",
-        name: "Uncertain",
+        name: "Неуверенный",
         color: "dark"
     }
 };
@@ -36,7 +35,7 @@ const qualities = {
 const users = [
     {
         _id: "67rdca3eeb7f6fgeed471815",
-        name: "John Dorian",
+        name: "Джон Дориан",
         profession: professions.doctor,
         qualities: [qualities.tedious, qualities.uncertain, qualities.strange],
         completedMeetings: 36,
@@ -45,7 +44,7 @@ const users = [
     },
     {
         _id: "67rdca3eeb7f6fgeed471816",
-        name: "Coke",
+        name: "Кокс",
         profession: professions.doctor,
         qualities: [qualities.buller, qualities.handsome, qualities.alcoholic],
         completedMeetings: 15,
@@ -54,7 +53,7 @@ const users = [
     },
     {
         _id: "67rdca3eeb7f6fgeed471817",
-        name: "Bob Kelso",
+        name: "Боб Келсо",
         profession: professions.doctor,
         qualities: [qualities.buller],
         completedMeetings: 247,
@@ -63,7 +62,7 @@ const users = [
     },
     {
         _id: "67rdca3eeb7f6fgeed471818",
-        name: "Rachel Green",
+        name: "Рэйчел Грин",
         profession: professions.waiter,
         qualities: [qualities.uncertain],
         completedMeetings: 148,
@@ -72,7 +71,7 @@ const users = [
     },
     {
         _id: "67rdca3eeb7f6fgeed471819",
-        name: "Sheldon Cooper",
+        name: "Шелдон Купер",
         profession: professions.physics,
         qualities: [qualities.strange, qualities.tedious],
         completedMeetings: 37,
@@ -81,7 +80,7 @@ const users = [
     },
     {
         _id: "67rdca3eeb7f6fgeed471820",
-        name: "Leonard Hofstadter",
+        name: "Леонард Хофстедтер",
         profession: professions.physics,
         qualities: [qualities.strange, qualities.uncertain],
         completedMeetings: 147,
@@ -90,7 +89,7 @@ const users = [
     },
     {
         _id: "67rdca3eeb7f6fgeed471821",
-        name: "Howard Wolowitz",
+        name: "Говард Воловиц",
         profession: professions.engineer,
         qualities: [qualities.strange, qualities.tedious],
         completedMeetings: 72,
@@ -99,7 +98,7 @@ const users = [
     },
     {
         _id: "67rdca3eeb7f6fgeed471822",
-        name: "Nikola Tesla",
+        name: "Никола Тесла",
         profession: professions.engineer,
         qualities: [qualities.handsome],
         completedMeetings: 72,
@@ -108,7 +107,7 @@ const users = [
     },
     {
         _id: "67rdca3eeb7f6fgeed471823",
-        name: "Monica Geller",
+        name: "Моника Геллер",
         profession: professions.cook,
         qualities: [qualities.strange, qualities.uncertain],
         completedMeetings: 17,
@@ -117,7 +116,7 @@ const users = [
     },
     {
         _id: "67rdca3eeb7f6fgeed471824",
-        name: "Ratatouille",
+        name: "Рататуй",
         profession: professions.cook,
         qualities: [qualities.handsome, qualities.buller],
         completedMeetings: 17,
@@ -126,7 +125,7 @@ const users = [
     },
     {
         _id: "67rdca3eeb7f6fgeed47181f",
-        name: "Joey Tribbiani",
+        name: "Джоуи Триббиани",
         profession: professions.actor,
         qualities: [qualities.uncertain, qualities.strange],
         completedMeetings: 434,
@@ -135,7 +134,7 @@ const users = [
     },
     {
         _id: "67rdca3eeb7f6fgeed47181r",
-        name: "Brad Pitt",
+        name: "Брэд Питт",
         profession: professions.actor,
         qualities: [qualities.handsome],
         completedMeetings: 434,
@@ -143,6 +142,14 @@ const users = [
         bookmark: false
     }
 ];
-export function fetchAll() {
-    return users;
-}
+
+const fetchAll = () =>
+    new Promise((resolve) => {
+        window.setTimeout(function () {
+            resolve(users);
+        }, 2000);
+    });
+
+export default {
+    fetchAll
+};

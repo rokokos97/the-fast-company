@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add button Resat">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="transfer renderPhrase to users.jsx&#10;refactoring code &#10;add useEffect that follow number of users on page and change current Page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/groupList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/groupList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +37,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="develop_pagination_homework" />
-                    <option name="lastUsedInstant" value="1671635075" />
+                    <option name="branchName" value="week_5_filtration" />
+                    <option name="lastUsedInstant" value="1671652842" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -64,24 +61,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rokokos97/WebstormProjects/the-fast-company&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;cn.yiiguxing.plugin.translate&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app" />
@@ -106,6 +103,7 @@
       <workItem from="1671578588693" duration="290000" />
       <workItem from="1671578886212" duration="940000" />
       <workItem from="1671579843926" duration="3010000" />
+      <workItem from="1671721862436" duration="232000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1671290103691</created>
@@ -275,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671648568712</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="transfer renderPhrase to users.jsx&#10;refactoring code &#10;add useEffect that follow number of users on page and change current Page">
+      <created>1671652810420</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1671652810420</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +321,7 @@
     <MESSAGE value="add defaultProps = { contentProperty valueProperty } in groupList.jsx&#10;&#10;&#10;}" />
     <MESSAGE value="add EventListener to item in groupList.jsx&#10;add useState from selectedProf &#10;add render class to item list in groupList.jsx&#10;&#10;}" />
     <MESSAGE value="add button Resat" />
-    <option name="LAST_COMMIT_MESSAGE" value="add button Resat" />
+    <MESSAGE value="transfer renderPhrase to users.jsx&#10;refactoring code &#10;add useEffect that follow number of users on page and change current Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="transfer renderPhrase to users.jsx&#10;refactoring code &#10;add useEffect that follow number of users on page and change current Page" />
   </component>
 </project>
