@@ -11,19 +11,36 @@ const GroupList = ({
     return (
         <>
             <ul className="list-group">
-                {Object.keys(items).map((item) => (
-                    <li
-                        key={items[item][contentProperty]}
-                        className={
-                            "list-group-item" +
-                            (items[item] === selectedItem ? " active" : "")
-                        }
-                        onClick={() => onItemSelect(items[item])}
-                        role={"button"}
-                    >
-                        {items[item][valueProperty]}
-                    </li>
-                ))}
+                {items.log}
+                {Array.isArray(items)
+                    ? items.map((item) => (
+                        <li
+                            key={item[contentProperty]}
+                            role={"button"}
+                            onClick={() => onItemSelect(item)}
+                            className={
+                                "list-group-item" +
+                                  (item === selectedItem ? " active" : "")
+                            }
+                        >
+                            {item[valueProperty]}
+                        </li>
+                    ))
+                    : Object.keys(items).map((item) => (
+                        <li
+                            key={items[item][contentProperty]}
+                            className={
+                                "list-group-item" +
+                                  (items[item] === selectedItem
+                                      ? " active"
+                                      : "")
+                            }
+                            onClick={() => onItemSelect(items[item])}
+                            role={"button"}
+                        >
+                            {items[item][valueProperty]}
+                        </li>
+                    ))}
             </ul>
             <button className={"btn btn-secondary m-2"} onClick={onResat}>
                 Reset
@@ -39,7 +56,7 @@ GroupList.defaultProps = {
 GroupList.propTypes = {
     valueProperty: PropTypes.string.isRequired,
     contentProperty: PropTypes.string.isRequired,
-    items: PropTypes.object.isRequired,
+    items: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
     onItemSelect: PropTypes.func,
     selectedItem: PropTypes.object,
     onResat: PropTypes.func
