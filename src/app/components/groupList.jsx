@@ -11,7 +11,6 @@ const GroupList = ({
     return (
         <>
             <ul className="list-group">
-                {items.log}
                 {Array.isArray(items)
                     ? items.map((item) => (
                         <li

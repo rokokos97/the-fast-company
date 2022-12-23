@@ -15,8 +15,6 @@ function Users({ users: allUsers, ...rest }) {
     useEffect(() => {
         api.professions.fetchAll().then((data) => setProfessions(data));
     }, []);
-    console.log(allUsers);
-    console.log(selectedProf);
     useEffect(() => {
         setCurrentPage(1);
     }, [selectedProf]);
@@ -24,7 +22,6 @@ function Users({ users: allUsers, ...rest }) {
         setCurrentPage(page);
     };
     const handleProfessionSelect = (item) => {
-        console.log("item", item);
         setSelectedProf(item);
     };
     const handleReset = () => {
@@ -56,7 +53,7 @@ function Users({ users: allUsers, ...rest }) {
                     />
                 )}
             </div>
-            <div>
+            <div className={"vw-100"}>
                 <RenderPhrase usersNumber={count} />
                 {count > 0 && (
                     <table className="table">
