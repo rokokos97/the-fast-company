@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="delete user.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="refactoring code&#10;transfer all users component back to users.jsx">
+      <change afterPath="$PROJECT_DIR$/src/app/components/sortArrow.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/tableBody.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/userTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/userTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/tableHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/tableHeader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="week_5_filtration" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,8 +40,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="develop_pagination_homework" />
-                    <option name="lastUsedInstant" value="1671635075" />
+                    <option name="branchName" value="week_6_sort" />
+                    <option name="lastUsedInstant" value="1672096209" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -110,7 +109,7 @@
       <workItem from="1671579843926" duration="3010000" />
       <workItem from="1671837413091" duration="806000" />
       <workItem from="1671875245222" duration="18078000" />
-      <workItem from="1672076667027" duration="5276000" />
+      <workItem from="1672076667027" duration="10503000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1671290103691</created>
@@ -427,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672094550089</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="refactoring code&#10;transfer all users component back to users.jsx">
+      <created>1672095985724</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1672095985724</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +451,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add rules to eslint.js&#10;refactoring code" />
     <MESSAGE value="all PropTypes complete" />
     <MESSAGE value="expended fake api &#10;create component groupList.jsx" />
     <MESSAGE value="expended fake api" />
@@ -470,6 +475,7 @@
     <MESSAGE value="dynamic rendering button Delete" />
     <MESSAGE value="create table.jsx&#10;import tableHeader and tableBody into table.jsx" />
     <MESSAGE value="delete user.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete user.jsx" />
+    <MESSAGE value="refactoring code&#10;transfer all users component back to users.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring code&#10;transfer all users component back to users.jsx" />
   </component>
 </project>

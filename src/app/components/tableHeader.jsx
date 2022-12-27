@@ -1,9 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import SortArrow from "./sortArrow";
 
 const TableHeader = ({ onSort, selectedSort, columns }) => {
     const handelSort = (item) => {
         if (selectedSort.path === item) {
+            console.log("item", item);
+            console.log("selectedSort", selectedSort);
             onSort({ ...selectedSort, order: selectedSort.order === "asc" ? "desc" : "asc" });
         } else {
             onSort({ path: item, order: "asc" });
@@ -21,7 +24,12 @@ const TableHeader = ({ onSort, selectedSort, columns }) => {
                         role={columns[column].path
                             ? "button"
                             : ""}
-                        scope="col">{columns[column].name}</th>
+                        scope="col">
+                        <>
+                            {columns[column].name}
+                            {(columns[column].path !== selectedSort.path) || <SortArrow selectedSort={selectedSort}/>}
+                        </>
+                    </th>
                 ))}
             </tr>
         </thead>

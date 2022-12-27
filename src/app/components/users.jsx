@@ -9,7 +9,7 @@ import UserTable from "./userTable";
 import _ from "lodash";
 
 const Users = () => {
-    const pageSize = 8;
+    const pageSize = 4;
     const [currentPage, setCurrentPage] = useState(1);
     const [professions, setProfessions] = useState(null);
     const [selectedProf, setSelectedProf] = useState();
@@ -41,6 +41,9 @@ const Users = () => {
     useEffect(() => {
         setCurrentPage(1);
     }, [selectedProf]);
+    useEffect(() => {
+        // ТУТ БУДЕТ РЕШЕНИЕ ПРОБЛЕМЫ С ВИСЯЩЕЙ СТРАНИЦЕЙ
+    }, [users]);
     const handlePageChange = (page) => {
         setCurrentPage(page);
     };
@@ -101,7 +104,7 @@ const Users = () => {
             </div>
         );
     }
-    return "loading";
+    return <h1>loading...</h1>;
 };
 Users.propTypes = {
     users: PropTypes.array
