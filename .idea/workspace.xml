@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="refactoring code&#10;transfer all users component back to users.jsx">
-      <change afterPath="$PROJECT_DIR$/src/app/components/sortArrow.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add component sortArrow.jsx&#10;add dynamic change sortArrow">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/sortArrow.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sortArrow.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/tableHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/tableHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,7 @@
       <workItem from="1671579843926" duration="3010000" />
       <workItem from="1671837413091" duration="806000" />
       <workItem from="1671875245222" duration="18078000" />
-      <workItem from="1672076667027" duration="10503000" />
+      <workItem from="1672076667027" duration="11791000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1671290103691</created>
@@ -433,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672095985724</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="add component sortArrow.jsx&#10;add dynamic change sortArrow">
+      <created>1672138283042</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1672138283042</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +457,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="all PropTypes complete" />
     <MESSAGE value="expended fake api &#10;create component groupList.jsx" />
     <MESSAGE value="expended fake api" />
     <MESSAGE value="add processing the incoming object in groupList &#10;add independent parameters contentProperty and valueProperty" />
@@ -476,6 +481,7 @@
     <MESSAGE value="create table.jsx&#10;import tableHeader and tableBody into table.jsx" />
     <MESSAGE value="delete user.jsx" />
     <MESSAGE value="refactoring code&#10;transfer all users component back to users.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring code&#10;transfer all users component back to users.jsx" />
+    <MESSAGE value="add component sortArrow.jsx&#10;add dynamic change sortArrow" />
+    <option name="LAST_COMMIT_MESSAGE" value="add component sortArrow.jsx&#10;add dynamic change sortArrow" />
   </component>
 </project>

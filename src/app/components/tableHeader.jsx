@@ -5,8 +5,6 @@ import SortArrow from "./sortArrow";
 const TableHeader = ({ onSort, selectedSort, columns }) => {
     const handelSort = (item) => {
         if (selectedSort.path === item) {
-            console.log("item", item);
-            console.log("selectedSort", selectedSort);
             onSort({ ...selectedSort, order: selectedSort.order === "asc" ? "desc" : "asc" });
         } else {
             onSort({ path: item, order: "asc" });
@@ -27,7 +25,7 @@ const TableHeader = ({ onSort, selectedSort, columns }) => {
                         scope="col">
                         <>
                             {columns[column].name}
-                            {(columns[column].path !== selectedSort.path) || <SortArrow selectedSort={selectedSort}/>}
+                            {(columns[column].path === selectedSort.path) && <SortArrow selectedSort={selectedSort}/>}
                         </>
                     </th>
                 ))}
