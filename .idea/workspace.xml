@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="update groupList.jsx that take &quot;items&quot; arr and object">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add function renderSortArrow to tableHeader.jsx">
+      <change afterPath="$PROJECT_DIR$/src/app/components/tableBody.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/tableHeader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/usersTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_12_22,_21_59_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_12_22__21_59__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/professions.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/fake.api/professions.api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/groupList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/groupList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,10 +26,13 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="week_5_filtration" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +46,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="week_5_filtration_develop" />
+                    <option name="lastUsedInstant" value="1672143288" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="week_5_filtration" />
                     <option name="lastUsedInstant" value="1671652842" />
@@ -58,6 +69,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectId" id="2J2v0H4OQ6Vd0Jod7OFBWe44HsP" />
   <component name="ProjectViewState">
@@ -110,6 +124,7 @@
       <workItem from="1671722131970" duration="3289000" />
       <workItem from="1671725450929" duration="799000" />
       <workItem from="1671745678376" duration="1715000" />
+      <workItem from="1672312912041" duration="1782000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1671290103691</created>
