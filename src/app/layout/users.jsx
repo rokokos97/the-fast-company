@@ -27,8 +27,15 @@ const Users = () => {
     useEffect(() => {
         api.users.getUserById(userId).then((data) => setUser(data));
     }, [userId]);
+    useEffect(() => {
+        api.professions.fetchAll().then((data) => setProfessions(data));
+    }, []);
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [selectedProf]);
     const handelDelete = (id) => {
         setUsers(users.filter((filteredUser) => filteredUser._id !== id));
+        setCurrentPage(1);
     };
     const handelBookmark = (id) => {
         setUsers(
@@ -40,12 +47,6 @@ const Users = () => {
             })
         );
     };
-    useEffect(() => {
-        api.professions.fetchAll().then((data) => setProfessions(data));
-    }, []);
-    useEffect(() => {
-        setCurrentPage(1);
-    }, [selectedProf]);
     const handlePageChange = (page) => {
         setCurrentPage(page);
     };
@@ -58,7 +59,6 @@ const Users = () => {
     const handelSort = (item) => {
         setSortBy(item);
     };
-    console.log(user);
     if (users) {
         const filteredUsers = selectedProf
             ? users.filter(

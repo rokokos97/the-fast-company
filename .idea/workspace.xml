@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="realise UserCard with reset to allUsers button">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/userCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/userCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/userTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/userTable.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add transfer from user name in users.jsx to userCard">
       <change beforePath="$PROJECT_DIR$/src/app/layout/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -453,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672778716649</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="add transfer from user name in users.jsx to userCard">
+      <created>1672780477664</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1672780477664</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +474,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="expended fake api" />
     <MESSAGE value="add processing the incoming object in groupList &#10;add independent parameters contentProperty and valueProperty" />
     <MESSAGE value="add defaultProps = { contentProperty valueProperty } in groupList.jsx&#10;&#10;&#10;}" />
     <MESSAGE value="add EventListener to item in groupList.jsx&#10;add useState from selectedProf &#10;add render class to item list in groupList.jsx&#10;&#10;}" />
@@ -496,6 +498,7 @@
     <MESSAGE value="Add routing&#10;create userCard.jsx" />
     <MESSAGE value="add getUserById() to api" />
     <MESSAGE value="realise UserCard with reset to allUsers button" />
-    <option name="LAST_COMMIT_MESSAGE" value="realise UserCard with reset to allUsers button" />
+    <MESSAGE value="add transfer from user name in users.jsx to userCard" />
+    <option name="LAST_COMMIT_MESSAGE" value="add transfer from user name in users.jsx to userCard" />
   </component>
 </project>
