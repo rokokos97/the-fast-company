@@ -1,26 +1,58 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Bookmark from "./bookmark";
+import QualitiesList from "./qualitiesList";
+import Table from "./table";
 import TableHeader from "./tableHeader";
 import TableBody from "./tableBody";
 
-const UsersTable = ({ users, onSort, selectedSort, onDelete, onToggleBookMark }) => {
+const UsersTable = ({
+    users,
+    onSort,
+    selectedSort,
+    onDelete,
+    onToggleBookMark
+}) => {
     const columns = {
-        name: { iter: "name", name: "Name" },
-        qualities: { name: "Qualities" },
-        profession: { iter: "profession.name", name: "Profession" },
-        completedMeetings: { iter: "completedMeetings", name: "Meets" },
-        rate: { iter: "rate", name: "Rate" },
-        bookmark: { iter: "bookmark", name: "Bookmark" },
-        delete: {}
+        name: { path: "name", name: "Name" },
+        qualities: {
+            name: "Qualities",
+            component: (user) => <QualitiesList qualities={user.qualities} />
+        },
+        profession: { path: "profession.name", name: "Profession" },
+        completedMeetings: { path: "completedMeetings", name: "Meets" },
+        rate: { path: "rate", name: "Rate" },
+        bookmark: {
+            path: "bookmark",
+            name: "Bookmark",
+            component: (user) => (
+                <Bookmark
+                    status={user.bookmark}
+                    onClick={() => onToggleBookMark(user._id)}
+                />
+            )
+        },
+        delete: {
+            component: (user) => (
+                <button
+                    className={"btn btn-danger"}
+                    onClick={() => onDelete(user._id)}
+                >
+                    Delete
+                </button>
+            )
+        }
     };
     return (
-        <table className="table">
-            <TableHeader {...{ onSort, selectedSort, columns }}/>
-            <TableBody
-                items={users}
-                {...{ onDelete, onToggleBookMark, columns }}
-            />
-        </table>
+        <Table
+            onSort={onSort}
+            selectedSort={selectedSort}
+            columns={columns}
+            data={users}
+        >
+            <TableHeader {...{ onSort, selectedSort, columns }} />
+            <TableBody data={users} {...{ columns }} />
+        </Table>
     );
 };
 UsersTable.propTypes = {

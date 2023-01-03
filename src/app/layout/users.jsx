@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import Pagination from "./pagination";
-import { paginate } from "./utils/paginate";
+import Pagination from "../components/pagination";
+import { paginate } from "../components/utils/paginate";
 import api from "../api";
-import GroupList from "./groupList";
-import RenderPhrase from "./renderPhrase";
-import UsersTable from "./usersTable";
+import GroupList from "../components/groupList";
+import RenderPhrase from "../components/renderPhrase";
+import UsersTable from "../components/usersTable";
 import _ from "lodash";
 
 function Users() {
@@ -13,11 +13,12 @@ function Users() {
     const [currentPage, setCurrentPage] = useState(1);
     const [professions, setProfessions] = useState(null);
     const [selectedProf, setSelectedProf] = useState();
-    const [sortBy, setSortBy] = useState({ iter: "name", order: "asc" });
+    const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
     const [users, setUsers] = useState(null);
     useEffect(() => {
         api.users.fetchAll().then((data) => setUsers(data));
     }, []);
+    console.log(users);
     const handelDelete = (id) => {
         setUsers(users.filter((filteredUser) => filteredUser._id !== id));
     };
@@ -54,11 +55,15 @@ function Users() {
             ? users.filter(
                 (user) =>
                     JSON.stringify(user.profession) ===
-                    JSON.stringify(selectedProf)
+                      JSON.stringify(selectedProf)
             )
             : users;
         const count = filteredUsers.length;
-        const sortedUsers = _.orderBy(filteredUsers, [sortBy.iter], [sortBy.order]);
+        const sortedUsers = _.orderBy(
+            filteredUsers,
+            [sortBy.path],
+            [sortBy.order]
+        );
         const usersCrop = paginate(sortedUsers, currentPage, pageSize);
         // useEffect(() => {
         //     if (usersCrop.length === 0) setCurrentPage(1);
@@ -78,7 +83,7 @@ function Users() {
                     )}
                 </div>
                 <div className={"vw-100"}>
-                    <RenderPhrase usersNumber={count}/>
+                    <RenderPhrase usersNumber={count} />
                     {count > 0 && (
                         <UsersTable
                             users={usersCrop}
@@ -100,7 +105,6 @@ function Users() {
     } else {
         return <h1>Loading...</h1>;
     }
-    ;
 }
 
 Users.propTypes = {

@@ -1,24 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
+import _ from "lodash";
 
-const TableBody = ({ items, columns }) => {
-    console.log("items", items);
-    console.log("columns", columns);
+const TableBody = ({ data, columns }) => {
+    const renderContent = (item, column) => {
+        if (columns[column].component) {
+            const component = columns[column].component;
+            if (typeof component === "function") {
+                return component(item);
+            }
+            return component;
+        } else {
+            return _.get(item, columns[column].path);
+        }
+    };
     return (
         <tbody>
-            <tr>{Object.keys(columns).map((c) => (
-                <td key={c}>{columns[c].name}</td>
-            ))}</tr>
-            {/* {items.map((item) => ( */}
-            {/*    <User key={item._id} onDelete={onDelete} onToggleBookMark={onToggleBookMark} {...item}/> */}
-            {/* ))} */}
+            {data.map((item) => (
+                <tr key={item._id}>
+                    {Object.keys(columns).map((column) => (
+                        <td key={column}>{renderContent(item, column)}</td>
+                    ))}
+                </tr>
+            ))}
         </tbody>
     );
 };
 TableBody.propTypes = {
-    items: PropTypes.array.isRequired,
-    onDelete: PropTypes.func.isRequired,
-    onToggleBookMark: PropTypes.func.isRequired,
+    data: PropTypes.array.isRequired,
+    onDelete: PropTypes.func,
+    onToggleBookMark: PropTypes.func,
     columns: PropTypes.object
 };
 export default TableBody;

@@ -5,7 +5,9 @@ Bootstrap 5.1.0
 
 ##package
 Prettier
-Reasct Snippet
-\_lodesh
+React Snippet
+_lodash
 ESLint
+React Router DOM
+
 
