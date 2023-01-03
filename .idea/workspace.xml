@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="delete user.jsx">
-      <change afterPath="$PROJECT_DIR$/src/app/components/navBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/userCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/layout/404.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/layout/login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/layout/main.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="Add routing&#10;create userCard.jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/user.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/fake.api/user.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -438,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672094550089</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Add routing&#10;create userCard.jsx">
+      <created>1672765522235</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1672765522235</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,7 +455,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add rules to eslint.js&#10;refactoring code" />
     <MESSAGE value="all PropTypes complete" />
     <MESSAGE value="expended fake api &#10;create component groupList.jsx" />
     <MESSAGE value="expended fake api" />
@@ -481,6 +479,7 @@
     <MESSAGE value="dynamic rendering button Delete" />
     <MESSAGE value="create table.jsx&#10;import tableHeader and tableBody into table.jsx" />
     <MESSAGE value="delete user.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete user.jsx" />
+    <MESSAGE value="Add routing&#10;create userCard.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add routing&#10;create userCard.jsx" />
   </component>
 </project>

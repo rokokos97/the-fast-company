@@ -15,15 +15,17 @@ const Users = () => {
     const [professions, setProfessions] = useState(null);
     const [selectedProf, setSelectedProf] = useState();
     const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
-
-    const [users, setUsers] = useState(0);
-
     const { userId } = useParams();
 
+    const [users, setUsers] = useState(0);
+    const [user, setUser] = useState();
+    console.log(user);
     useEffect(() => {
         api.users.fetchAll().then((data) => setUsers(data));
     }, []);
-
+    useEffect(() => {
+        api.users.getUserById(userId).then((data) => setUser(data));
+    }, [userId]);
     const handelDelete = (id) => {
         setUsers(users.filter((filteredUser) => filteredUser._id !== id));
     };
