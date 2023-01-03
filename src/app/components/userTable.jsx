@@ -5,10 +5,11 @@ import QualitiesList from "./qualitiesList";
 import Table from "./table";
 import TableHeader from "./tableHeader";
 import TableBody from "./tableBody";
+import { Link } from "react-router-dom";
 
 const UserTable = ({ users, onSort, selectedSort, onToggleBookMark, onDelete }) => {
     const columns = {
-        name: { path: "name", name: "Name" },
+        name: { path: "name", name: "Name", component: (user) => (<Link to={`/users/${user._id}`}>{user.name}</Link>) },
         qualities: { name: "Qualities", component: (user) => (<QualitiesList qualities={user.qualities}/>) },
         profession: { path: "profession.name", name: "Profession" },
         completedMeetings: { path: "completedMeetings", name: "Meets" },

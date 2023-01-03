@@ -74,7 +74,7 @@ const Users = () => {
         //     if (usersCrop.length === 0) setCurrentPage(1);
         // }, [usersCrop]);
         return (
-            user
+            userId
                 ? <UserCard user={user}/>
                 : <div className={"d-flex flex-shrink-0"}>
                     <div className={"d-flex flex-column p-2"}>
