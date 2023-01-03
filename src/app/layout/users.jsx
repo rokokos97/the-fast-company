@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import Pagination from "./pagination";
-import { paginate } from "./utils/paginate";
+import Pagination from "../components/pagination";
+import { paginate } from "../components/utils/paginate";
 import api from "../api";
-import GroupList from "./groupList";
-import SearchStatus from "./searchStatus";
-import UserTable from "./userTable";
+import GroupList from "../components/groupList";
+import SearchStatus from "../components/searchStatus";
+import UserTable from "../components/userTable";
 import _ from "lodash";
+import { useParams } from "react-router-dom";
 
 const Users = () => {
     const pageSize = 8;
@@ -16,6 +17,8 @@ const Users = () => {
     const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
 
     const [users, setUsers] = useState(0);
+
+    const { userId } = useParams();
 
     useEffect(() => {
         api.users.fetchAll().then((data) => setUsers(data));
@@ -101,7 +104,7 @@ const Users = () => {
             </div>
         );
     }
-    return "loading";
+    return <h1 className={"m-3"}>Loading...</h1>;
 };
 Users.propTypes = {
     users: PropTypes.array
