@@ -8,6 +8,7 @@ import SearchStatus from "../components/searchStatus";
 import UserTable from "../components/userTable";
 import _ from "lodash";
 import { useParams } from "react-router-dom";
+import UserCard from "../components/userCard";
 
 const Users = () => {
     const pageSize = 8;
@@ -18,8 +19,8 @@ const Users = () => {
     const { userId } = useParams();
 
     const [users, setUsers] = useState(0);
-    const [user, setUser] = useState();
-    console.log(user);
+    const [user, setUser] = useState(null);
+
     useEffect(() => {
         api.users.fetchAll().then((data) => setUsers(data));
     }, []);
@@ -39,7 +40,6 @@ const Users = () => {
             })
         );
     };
-
     useEffect(() => {
         api.professions.fetchAll().then((data) => setProfessions(data));
     }, []);
@@ -58,6 +58,7 @@ const Users = () => {
     const handelSort = (item) => {
         setSortBy(item);
     };
+    console.log(user);
     if (users) {
         const filteredUsers = selectedProf
             ? users.filter(
@@ -73,37 +74,39 @@ const Users = () => {
         //     if (usersCrop.length === 0) setCurrentPage(1);
         // }, [usersCrop]);
         return (
-            <div className={"d-flex flex-shrink-0"}>
-                <div className={"d-flex flex-column p-2"}>
-                    {professions && (
-                        <GroupList
-                            items={professions}
-                            onItemSelect={handleProfessionSelect}
-                            selectedItem={selectedProf}
-                            onResat={handleReset}
-                            // contentProperty="_id"
-                            // valueProperty="name"
+            user
+                ? <UserCard user={user}/>
+                : <div className={"d-flex flex-shrink-0"}>
+                    <div className={"d-flex flex-column p-2"}>
+                        {professions && (
+                            <GroupList
+                                items={professions}
+                                onItemSelect={handleProfessionSelect}
+                                selectedItem={selectedProf}
+                                onResat={handleReset}
+                                // contentProperty="_id"
+                                // valueProperty="name"
+                            />
+                        )}
+                    </div>
+                    <div className={"vw-100"}>
+                        <SearchStatus usersNumber={count}/>
+                        {(count > 0) && (
+                            <UserTable
+                                users={usersCrop}
+                                onSort={handelSort}
+                                selectedSort={sortBy}
+                                onDelete={handelDelete}
+                                onToggleBookMark={handelBookmark}/>
+                        )}
+                        <Pagination
+                            countItem={count}
+                            pageSize={pageSize}
+                            onPageChange={handlePageChange}
+                            currentPage={currentPage}
                         />
-                    )}
+                    </div>
                 </div>
-                <div className={"vw-100"}>
-                    <SearchStatus usersNumber={count}/>
-                    {(count > 0) && (
-                        <UserTable
-                            users={usersCrop}
-                            onSort={handelSort}
-                            selectedSort={sortBy}
-                            onDelete={handelDelete}
-                            onToggleBookMark={handelBookmark}/>
-                    )}
-                    <Pagination
-                        countItem={count}
-                        pageSize={pageSize}
-                        onPageChange={handlePageChange}
-                        currentPage={currentPage}
-                    />
-                </div>
-            </div>
         );
     }
     return <h1 className={"m-3"}>Loading...</h1>;

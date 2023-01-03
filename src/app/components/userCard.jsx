@@ -1,23 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
+import QualitiesList from "./qualitiesList";
+import { useHistory } from "react-router-dom";
 
-const UserCard = ({ id }) => {
+const UserCard = ({ user }) => {
+    const history = useHistory();
+    const handelReset = () => {
+        history.push("/users");
+    };
     return (
         <>
-            <div className="card" style="width: 18rem;">
-                <ul className="list-group list-group-flush">
-                    <li className="list-group-item">An item</li>
-                    <li className="list-group-item">A second item</li>
-                    <li className="list-group-item">A third item</li>
-                </ul>
-                <div className="card-footer">
-                    Card footer
+            <div className="card w-50 m-2">
+                <h4 className="card-header">{user.name}</h4>
+                <div className="card-body">
+                    <h5 className="card-title">profession: {user.profession.name} </h5>
+                    <h5 className="card-title">qualities: {<QualitiesList qualities={user.qualities}/>} </h5>
+                    <h5 className="card-title">rate: {user.rate}</h5>
+                    <h5 className="card-title">c: {user.rate}</h5>
+                    <button className="btn btn-primary" onClick={handelReset}>All Users</button>
                 </div>
             </div>
         </>
     );
 };
 UserCard.propTypes = {
-    id: PropTypes.string
+    user: PropTypes.object.isRequired
 };
 export default UserCard;
