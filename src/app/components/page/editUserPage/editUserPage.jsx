@@ -68,6 +68,8 @@ const EditUserPage = () => {
     // };
     const transformQual = (arr) => arr.map((obj) => ({ label: obj.name, value: obj._id, color: obj.color }));
     const validateSchema = yup.object().shape({
+        qualities: yup.array()
+            .min(1, "Qualities is required"),
         profession: yup.string().required("Profession is required"),
         completedMeetings: yup.string()
             .required("Completed Meetings is required")
