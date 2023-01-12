@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import TextFiled from "../../common/form/textField";
 import * as yup from "yup";
+import RadioField from "../../common/form/radioField";
 
 const EditUserPage = () => {
     const [data, setData] = useState({
         name: "",
         email: "",
-        profession: "",
+        sex: "male",
         rate: "",
         completedMeetings: "",
-        sex: "male",
+        profession: "",
         qualities: [{}]
     });
     const [errors, setErrors] = useState({});
@@ -61,6 +62,19 @@ const EditUserPage = () => {
                                 value={data.email}
                                 onChange={handelChange}
                                 error={errors.email}
+                            />
+                            <RadioField
+                                label={"Sex"}
+                                name={"sex"}
+                                value={data.sex}
+                                options={
+                                    [
+                                        { name: "Male", value: "male" },
+                                        { name: "Female", value: "female" },
+                                        { name: "Other", value: "other" }
+                                    ]
+                                }
+                                onChange={handelChange}
                             />
                             <button
                                 type={"submit"}

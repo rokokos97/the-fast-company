@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create routh to EditUserPage">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="editUserPage.jsx =&gt; add checking &quot;name&quot; and &quot;email&quot; field">
       <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,14 +119,7 @@
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
-      <workItem from="1673470003438" duration="3955000" />
-    </task>
-    <task id="LOCAL-00057" summary="create validator.js in utils">
-      <created>1672910490209</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1672910490209</updated>
+      <workItem from="1673470003438" duration="5143000" />
     </task>
     <task id="LOCAL-00058" summary="create validator.js in utils">
       <created>1672914472811</created>
@@ -465,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673472178779</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="editUserPage.jsx =&gt; add checking &quot;name&quot; and &quot;email&quot; field">
+      <created>1673536156631</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1673536156631</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="transfer part of loginForm into login.jsx" />
     <MESSAGE value="login.jsx add new state formType" />
     <MESSAGE value="app.js =&gt; add new parametr &quot;type&quot; to &#10;&lt;Route path=&quot;/login/:type?&quot; component={Login} /&gt;" />
     <MESSAGE value="login.jsx =&gt; add useParams add check &quot;type&quot; in useState" />
@@ -508,7 +506,8 @@
     <MESSAGE value="refactoring and debug =&gt; registerForm.jsx =&gt; &lt;SelectedField&gt; add name=&quot;professions&quot;" />
     <MESSAGE value="create editUserPage" />
     <MESSAGE value="create routh to EditUserPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="create routh to EditUserPage" />
+    <MESSAGE value="editUserPage.jsx =&gt; add checking &quot;name&quot; and &quot;email&quot; field" />
+    <option name="LAST_COMMIT_MESSAGE" value="editUserPage.jsx =&gt; add checking &quot;name&quot; and &quot;email&quot; field" />
   </component>
   <component name="regexState">
     <option name="map">
