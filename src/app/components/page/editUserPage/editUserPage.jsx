@@ -3,6 +3,9 @@ import TextFiled from "../../common/form/textField";
 import * as yup from "yup";
 import RadioField from "../../common/form/radioField";
 import api from "../../../api";
+import SelectedField from "../../common/form/selectedFild";
+import MultiSelectField from "../../common/form/multiselectField";
+import { useParams } from "react-router-dom";
 
 const EditUserPage = () => {
     const [data, setData] = useState({
@@ -17,7 +20,18 @@ const EditUserPage = () => {
     const [errors, setErrors] = useState({});
     const [isLoading] = useState(false);
     const [professions, setProfessions] = useState([]);
+    const [qualities, setQualities] = useState({});
+    const { userId } = useParams();
+    // console.log("userId", userId);
     useEffect(() => {
+        api.users.getById(userId).then(({ profession, qualities, ...data }) => setData(
+            (prevState) => ({
+                ...prevState,
+                ...data,
+                profession: profession._id,
+                qualities: transformQual(qualities)
+            }))
+        );
         api.professions.fetchAll().then((data) => {
             const professionList =
             Object.keys(data).map((profession) => (
@@ -26,9 +40,35 @@ const EditUserPage = () => {
             setProfessions(professionList);
             console.log("professionList", professionList);
         });
+        api.qualities.fetchAll().then((data) => {
+            const qualitiesList =
+            Object.keys(data).map((qualityName) => (
+                {
+                    label: data[qualityName].name,
+                    value: data[qualityName]._id,
+                    color: data[qualityName].color
+                }
+            ));
+            setQualities(qualitiesList);
+            console.log("qualitiesList", qualitiesList);
+        });
     }, []);
-
+    useEffect(() => { validate(); }, [data]);
+    // const getQuality = (ItemsArr, qualities) => {
+    //     const userQualities = [];
+    //     for (const item of ItemsArr) {
+    //         for (const quality of qualities) {
+    //             if (item._id === quality.value) {
+    //                 userQualities.push(quality);
+    //             }
+    //         }
+    //     }
+    //     console.log("userQualities", userQualities);
+    //     return userQualities;
+    // };
+    const transformQual = (arr) => arr.map((obj) => ({ label: obj.name, value: obj._id, color: obj.color }));
     const validateSchema = yup.object().shape({
+        profession: yup.string().required("Profession is required"),
         completedMeetings: yup.string()
             .required("Completed Meetings is required")
             .matches(/[0-9]$/, "Completed Meetings must contain only numbers")
@@ -56,7 +96,6 @@ const EditUserPage = () => {
         if (!isValid) return;
         console.log(data);
     };
-    useEffect(() => { validate(); }, [data]);
     const validate = () => {
         validateSchema
             .validate(data)
@@ -69,7 +108,7 @@ const EditUserPage = () => {
     return (<>
         <div className="container">
             <div className="row">
-                {(!isLoading && Object.keys(professions).length > 0)
+                {(!isLoading && Object.keys(professions).length > 0 && Object.keys(qualities).length)
                     ? <div className="card col-md-6 offset-md-3">
                         <div className="card-body">
                             <form onSubmit={handelSubmit} className={""}>
@@ -112,6 +151,22 @@ const EditUserPage = () => {
                                     value={data.completedMeetings}
                                     error={errors.completedMeetings}
                                     onChange={handelChange}/>
+                                <SelectedField
+                                    label={"Profession"}
+                                    name={"profession"}
+                                    value={data.profession}
+                                    options={professions}
+                                    defaultOption={"Choose..."}
+                                    error={errors.profession}
+                                    onChange={handelChange}/>
+                                <MultiSelectField
+                                    label={"Qualities"}
+                                    name={"qualities"}
+                                    options={qualities}
+                                    error={errors.qualities}
+                                    onChange={handelChange}
+                                    defaultValue={data.qualities}
+                                />
                                 <button
                                     type={"submit"}
                                     className={"btn btn-success w-100 mx-auto"}

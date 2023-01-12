@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="editUserPage.jsx =&gt; add new state &#10;profession&#10;add useEffect with loading profession from api">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="editUserPage.jsx =&gt; &#10;add useEffect with loading profession from api and transform profession object look like {label: ..., value:...,}">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,14 +121,7 @@
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
-      <workItem from="1673470003438" duration="10729000" />
-    </task>
-    <task id="LOCAL-00064" summary="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx">
-      <created>1672958111048</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1672958111048</updated>
+      <workItem from="1673470003438" duration="17158000" />
     </task>
     <task id="LOCAL-00065" summary="add one more filtration users by searshQuery">
       <created>1672958799446</created>
@@ -465,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673543921230</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="editUserPage.jsx =&gt; &#10;add useEffect with loading profession from api and transform profession object look like {label: ..., value:...,}">
+      <created>1673544921832</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1673544921832</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login.jsx =&gt; add iteration profession and making &lt;obtions&gt; for profession" />
     <MESSAGE value="selectedFild.jsx =&gt; add validation errors" />
     <MESSAGE value="add RadioField to registerForm" />
     <MESSAGE value="create radioField.jsx" />
@@ -508,7 +508,8 @@
     <MESSAGE value="editUserPage.jsx =&gt; add &quot;Completed Meetings&quot; field &#10;add checking rules by &quot;Completed Meetings&quot;" />
     <MESSAGE value="editUserPage.jsx =&gt; add new state &#10;isLoading" />
     <MESSAGE value="editUserPage.jsx =&gt; add new state &#10;profession&#10;add useEffect with loading profession from api" />
-    <option name="LAST_COMMIT_MESSAGE" value="editUserPage.jsx =&gt; add new state &#10;profession&#10;add useEffect with loading profession from api" />
+    <MESSAGE value="editUserPage.jsx =&gt; &#10;add useEffect with loading profession from api and transform profession object look like {label: ..., value:...,}" />
+    <option name="LAST_COMMIT_MESSAGE" value="editUserPage.jsx =&gt; &#10;add useEffect with loading profession from api and transform profession object look like {label: ..., value:...,}" />
   </component>
   <component name="regexState">
     <option name="map">
