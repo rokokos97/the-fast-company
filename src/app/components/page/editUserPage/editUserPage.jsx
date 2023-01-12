@@ -16,6 +16,10 @@ const EditUserPage = () => {
     const [errors, setErrors] = useState({});
 
     const validateSchema = yup.object().shape({
+        rate: yup.string()
+            .required("Rate is required")
+            .matches(/[0-9]$/, "Rate must contain only numbers")
+            .matches(/^(\d){1,3}$/g, "Rate must contain not more than 3 digits"),
         email: yup.string()
             .required("Email is required")
             .email("Email is not correct"),
