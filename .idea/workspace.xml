@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="editUserPage.jsx =&gt; add textField for user Name">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="sanding user info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/professions.api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/qualities.api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/user.api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/selectedFild.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/selectedFild.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="week_5_filtration" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,8 +38,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="develop_pagination_homework" />
-                    <option name="lastUsedInstant" value="1671635075" />
+                    <option name="branchName" value="week_9_form_2" />
+                    <option name="lastUsedInstant" value="1673471002" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -67,37 +62,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/rokokos97/WebstormProjects/the-fast-company/src/app/components/ui&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/components/page/editUserPage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/components/page/editUserPage" />
       <recent name="$PROJECT_DIR$/src/app/components/ui" />
       <recent name="$PROJECT_DIR$/src/app/components/page/usersListPage" />
       <recent name="$PROJECT_DIR$/src/app/components/layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/api" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/app/components/page/usersListPage" />
       <recent name="$PROJECT_DIR$/src/app/components/page/userPage" />
-      <recent name="$PROJECT_DIR$/src/app/components/ ui" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -124,118 +120,7 @@
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
-    </task>
-    <task id="LOCAL-00052" summary="add button Submit and handelSubmit to login.jsx">
-      <created>1672839651177</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1672839651178</updated>
-    </task>
-    <task id="LOCAL-00053" summary="add new state by errors&#10;add method validate &#10;add last check before submit in handelSubmit">
-      <created>1672867756064</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1672867756064</updated>
-    </task>
-    <task id="LOCAL-00054" summary="add visual info about errors">
-      <created>1672907117105</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1672907117105</updated>
-    </task>
-    <task id="LOCAL-00055" summary="create validatorConfig object in login.jsx">
-      <created>1672909002135</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1672909002136</updated>
-    </task>
-    <task id="LOCAL-00056" summary="create validator.js in utils">
-      <created>1672910001249</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1672910001249</updated>
-    </task>
-    <task id="LOCAL-00057" summary="create validator.js in utils">
-      <created>1672910490209</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1672910490209</updated>
-    </task>
-    <task id="LOCAL-00058" summary="create validator.js in utils">
-      <created>1672914472811</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1672914472811</updated>
-    </task>
-    <task id="LOCAL-00059" summary="add regEx by email to validatorConfig&#10;fix validator config =&gt; add one more requirement by field =&gt; (error &amp;&amp; !errors[fieldName])">
-      <created>1672916454568</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1672916454568</updated>
-    </task>
-    <task id="LOCAL-00060" summary="add any validations by password">
-      <created>1672932686048</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1672932686048</updated>
-    </task>
-    <task id="LOCAL-00061" summary="add parameter disabled to submit button">
-      <created>1672933394213</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1672933394213</updated>
-    </task>
-    <task id="LOCAL-00062" summary="add parameter disabled to submit button">
-      <created>1672933420567</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1672933420567</updated>
-    </task>
-    <task id="LOCAL-00063" summary="add styles to form Login">
-      <created>1672936007966</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1672936007966</updated>
-    </task>
-    <task id="LOCAL-00064" summary="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx">
-      <created>1672958111048</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1672958111048</updated>
-    </task>
-    <task id="LOCAL-00065" summary="add one more filtration users by searshQuery">
-      <created>1672958799446</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1672958799446</updated>
-    </task>
-    <task id="LOCAL-00066" summary="add one more filtration users by searshQuery">
-      <created>1672958833139</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1672958833139</updated>
-    </task>
-    <task id="LOCAL-00067" summary="add method handleSearchQuery">
-      <created>1672959224842</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1672959224842</updated>
+      <workItem from="1673470003438" duration="22226000" />
     </task>
     <task id="LOCAL-00068" summary="add method handleSearchQuery">
       <created>1672959256618</created>
@@ -468,7 +353,119 @@
       <option name="project" value="LOCAL" />
       <updated>1673183651268</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="create editUserPage">
+      <created>1673471032031</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1673471032032</updated>
+    </task>
+    <task id="LOCAL-00102" summary="create editUserPage">
+      <created>1673471071754</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1673471071754</updated>
+    </task>
+    <task id="LOCAL-00103" summary="create editUserPage">
+      <created>1673471085794</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1673471085794</updated>
+    </task>
+    <task id="LOCAL-00104" summary="create editUserPage">
+      <created>1673471097262</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1673471097262</updated>
+    </task>
+    <task id="LOCAL-00105" summary="create routh to EditUserPage">
+      <created>1673472178778</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1673472178779</updated>
+    </task>
+    <task id="LOCAL-00106" summary="editUserPage.jsx =&gt; add checking &quot;name&quot; and &quot;email&quot; field">
+      <created>1673536156631</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1673536156631</updated>
+    </task>
+    <task id="LOCAL-00107" summary="editUserPage.jsx =&gt; add &quot;sex&quot; field">
+      <created>1673536574088</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1673536574088</updated>
+    </task>
+    <task id="LOCAL-00108" summary="editUserPage.jsx =&gt; add &quot;rate&quot; field">
+      <created>1673536711700</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1673536711700</updated>
+    </task>
+    <task id="LOCAL-00109" summary="editUserPage.jsx =&gt; add &quot;rate&quot; field&#10;add checking rules by &quot;rate&quot;">
+      <created>1673538034533</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1673538034533</updated>
+    </task>
+    <task id="LOCAL-00110" summary="editUserPage.jsx =&gt; add &quot;Completed Meetings&quot; field &#10;add checking rules by &quot;Completed Meetings&quot;">
+      <created>1673538312404</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1673538312404</updated>
+    </task>
+    <task id="LOCAL-00111" summary="editUserPage.jsx =&gt; add &quot;Completed Meetings&quot; field &#10;add checking rules by &quot;Completed Meetings&quot;">
+      <created>1673539895374</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1673539895374</updated>
+    </task>
+    <task id="LOCAL-00112" summary="editUserPage.jsx =&gt; add new state &#10;profession&#10;add useEffect with loading profession from api">
+      <created>1673543921230</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1673543921230</updated>
+    </task>
+    <task id="LOCAL-00113" summary="editUserPage.jsx =&gt; &#10;add useEffect with loading profession from api and transform profession object look like {label: ..., value:...,}">
+      <created>1673544921832</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1673544921832</updated>
+    </task>
+    <task id="LOCAL-00114" summary="editUserPage.jsx =&gt; &#10;complete transfer user parameters to editUserPage">
+      <created>1673559822598</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1673559822598</updated>
+    </task>
+    <task id="LOCAL-00115" summary="editUserPage.jsx =&gt; &#10;complete transfer user parameters to editUserPage">
+      <created>1673560393233</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1673560393233</updated>
+    </task>
+    <task id="LOCAL-00116" summary="sanding user info">
+      <created>1673561537540</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1673561537540</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,18 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add style to userPage.jsx" />
-    <MESSAGE value="refactoring and change folder structure of project" />
-    <MESSAGE value="transfer part of loginForm into login.jsx" />
-    <MESSAGE value="login.jsx add new state formType" />
-    <MESSAGE value="app.js =&gt; add new parametr &quot;type&quot; to &#10;&lt;Route path=&quot;/login/:type?&quot; component={Login} /&gt;" />
-    <MESSAGE value="login.jsx =&gt; add useParams add check &quot;type&quot; in useState" />
-    <MESSAGE value="login.jsx =&gt; add method toggleFormType" />
-    <MESSAGE value="login.jsx =&gt; add changing form register&lt;=&gt;login" />
-    <MESSAGE value="login.jsx =&gt; add new state for profession" />
-    <MESSAGE value="login.jsx =&gt; add iteration profession and making &lt;obtions&gt; for profession" />
-    <MESSAGE value="selectedFild.jsx =&gt; add validation errors" />
-    <MESSAGE value="add RadioField to registerForm" />
     <MESSAGE value="create radioField.jsx" />
     <MESSAGE value="install react-select" />
     <MESSAGE value="registrationForm.jsx =&gt; Select from react-select" />
@@ -511,7 +496,19 @@
     <MESSAGE value="install Yup" />
     <MESSAGE value="add validationSchema for Yup" />
     <MESSAGE value="refactoring and debug =&gt; registerForm.jsx =&gt; &lt;SelectedField&gt; add name=&quot;professions&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring and debug =&gt; registerForm.jsx =&gt; &lt;SelectedField&gt; add name=&quot;professions&quot;" />
+    <MESSAGE value="create editUserPage" />
+    <MESSAGE value="create routh to EditUserPage" />
+    <MESSAGE value="editUserPage.jsx =&gt; add checking &quot;name&quot; and &quot;email&quot; field" />
+    <MESSAGE value="editUserPage.jsx =&gt; add &quot;sex&quot; field" />
+    <MESSAGE value="editUserPage.jsx =&gt; add &quot;rate&quot; field" />
+    <MESSAGE value="editUserPage.jsx =&gt; add &quot;rate&quot; field&#10;add checking rules by &quot;rate&quot;" />
+    <MESSAGE value="editUserPage.jsx =&gt; add &quot;Completed Meetings&quot; field &#10;add checking rules by &quot;Completed Meetings&quot;" />
+    <MESSAGE value="editUserPage.jsx =&gt; add new state &#10;isLoading" />
+    <MESSAGE value="editUserPage.jsx =&gt; add new state &#10;profession&#10;add useEffect with loading profession from api" />
+    <MESSAGE value="editUserPage.jsx =&gt; &#10;add useEffect with loading profession from api and transform profession object look like {label: ..., value:...,}" />
+    <MESSAGE value="editUserPage.jsx =&gt; &#10;complete transfer user parameters to editUserPage" />
+    <MESSAGE value="sanding user info" />
+    <option name="LAST_COMMIT_MESSAGE" value="sanding user info" />
   </component>
   <component name="regexState">
     <option name="map">
