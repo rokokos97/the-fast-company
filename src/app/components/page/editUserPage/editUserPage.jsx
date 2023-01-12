@@ -76,6 +76,14 @@ const EditUserPage = () => {
                                 }
                                 onChange={handelChange}
                             />
+                            <TextFiled
+                                label={"Rate"}
+                                name={"rate"}
+                                value={data.rate}
+                                error={errors.rate}
+                                onChange={handelChange}
+                            />
+
                             <button
                                 type={"submit"}
                                 className={"btn btn-success w-100 mx-auto"}
