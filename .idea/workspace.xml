@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="editUserPage.jsx =&gt; add &quot;Completed Meetings&quot; field &#10;add checking rules by &quot;Completed Meetings&quot;">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="editUserPage.jsx =&gt; add new state &#10;isLoading">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
     </list>
@@ -120,14 +120,7 @@
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
-      <workItem from="1673470003438" duration="7999000" />
-    </task>
-    <task id="LOCAL-00062" summary="add parameter disabled to submit button">
-      <created>1672933420567</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1672933420567</updated>
+      <workItem from="1673470003438" duration="9741000" />
     </task>
     <task id="LOCAL-00063" summary="add styles to form Login">
       <created>1672936007966</created>
@@ -465,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673538312404</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="editUserPage.jsx =&gt; add &quot;Completed Meetings&quot; field &#10;add checking rules by &quot;Completed Meetings&quot;">
+      <created>1673539895374</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1673539895374</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login.jsx =&gt; add changing form register&lt;=&gt;login" />
     <MESSAGE value="login.jsx =&gt; add new state for profession" />
     <MESSAGE value="login.jsx =&gt; add iteration profession and making &lt;obtions&gt; for profession" />
     <MESSAGE value="selectedFild.jsx =&gt; add validation errors" />
@@ -508,7 +507,8 @@
     <MESSAGE value="editUserPage.jsx =&gt; add &quot;rate&quot; field" />
     <MESSAGE value="editUserPage.jsx =&gt; add &quot;rate&quot; field&#10;add checking rules by &quot;rate&quot;" />
     <MESSAGE value="editUserPage.jsx =&gt; add &quot;Completed Meetings&quot; field &#10;add checking rules by &quot;Completed Meetings&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="editUserPage.jsx =&gt; add &quot;Completed Meetings&quot; field &#10;add checking rules by &quot;Completed Meetings&quot;" />
+    <MESSAGE value="editUserPage.jsx =&gt; add new state &#10;isLoading" />
+    <option name="LAST_COMMIT_MESSAGE" value="editUserPage.jsx =&gt; add new state &#10;isLoading" />
   </component>
   <component name="regexState">
     <option name="map">
