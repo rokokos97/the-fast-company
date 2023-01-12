@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="editUserPage.jsx =&gt; &#10;complete transfer user parameters to editUserPage">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="sanding user info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
     </list>
@@ -120,14 +120,7 @@
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
-      <workItem from="1673470003438" duration="18958000" />
-    </task>
-    <task id="LOCAL-00067" summary="add method handleSearchQuery">
-      <created>1672959224842</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1672959224842</updated>
+      <workItem from="1673470003438" duration="22226000" />
     </task>
     <task id="LOCAL-00068" summary="add method handleSearchQuery">
       <created>1672959256618</created>
@@ -465,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673560393233</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="sanding user info">
+      <created>1673561537540</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1673561537540</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add RadioField to registerForm" />
     <MESSAGE value="create radioField.jsx" />
     <MESSAGE value="install react-select" />
     <MESSAGE value="registrationForm.jsx =&gt; Select from react-select" />
@@ -508,7 +507,8 @@
     <MESSAGE value="editUserPage.jsx =&gt; add new state &#10;profession&#10;add useEffect with loading profession from api" />
     <MESSAGE value="editUserPage.jsx =&gt; &#10;add useEffect with loading profession from api and transform profession object look like {label: ..., value:...,}" />
     <MESSAGE value="editUserPage.jsx =&gt; &#10;complete transfer user parameters to editUserPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="editUserPage.jsx =&gt; &#10;complete transfer user parameters to editUserPage" />
+    <MESSAGE value="sanding user info" />
+    <option name="LAST_COMMIT_MESSAGE" value="sanding user info" />
   </component>
   <component name="regexState">
     <option name="map">

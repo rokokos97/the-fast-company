@@ -5,7 +5,7 @@ import RadioField from "../../common/form/radioField";
 import api from "../../../api";
 import SelectedField from "../../common/form/selectedFild";
 import MultiSelectField from "../../common/form/multiselectField";
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 
 const EditUserPage = () => {
     const [data, setData] = useState({
@@ -22,6 +22,7 @@ const EditUserPage = () => {
     const [professions, setProfessions] = useState([]);
     const [qualities, setQualities] = useState({});
     const { userId } = useParams();
+    const history = useHistory();
     // console.log("userId", userId);
     useEffect(() => {
         api.users.getById(userId).then(({ profession, qualities, ...data }) => setData(
@@ -57,18 +58,21 @@ const EditUserPage = () => {
         validate();
         if (data._id) setIsLoading(false);
     }, [data]);
-    // const getQuality = (ItemsArr, qualities) => {
-    //     const userQualities = [];
-    //     for (const item of ItemsArr) {
-    //         for (const quality of qualities) {
-    //             if (item._id === quality.value) {
-    //                 userQualities.push(quality);
-    //             }
-    //         }
-    //     }
-    //     console.log("userQualities", userQualities);
-    //     return userQualities;
-    // };
+    const getQual = (elements) => {
+        const qualitiesArray = [];
+        for (const elem of elements) {
+            for (const quality in qualities) {
+                if (elem.value === qualities[quality].value) {
+                    qualitiesArray.push({
+                        _id: qualities[quality].value,
+                        name: qualities[quality].label,
+                        color: qualities[quality].color
+                    });
+                }
+            }
+        }
+        return qualitiesArray;
+    };
     const transformQual = (arr) => arr.map((obj) => ({ label: obj.name, value: obj._id, color: obj.color }));
     const validateSchema = yup.object().shape({
         qualities: yup.array()
@@ -99,7 +103,20 @@ const EditUserPage = () => {
         e.preventDefault();
         const isValid = validate();
         if (!isValid) return;
-        console.log(data);
+        console.log(data.qualities);
+        api.users.update(userId, {
+            ...data,
+            profession: getProfessionById(data.profession),
+            qualities: getQual(data.qualities)
+        }).then((d) => history.push(`/users/${d._id}`)
+        );
+    };
+    const getProfessionById = (id) => {
+        for (const profession of professions) {
+            if (profession.value === id) {
+                return { _id: profession.value, name: profession.label };
+            }
+        }
     };
     const validate = () => {
         validateSchema
