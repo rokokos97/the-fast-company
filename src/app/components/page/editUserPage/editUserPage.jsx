@@ -23,7 +23,8 @@ const EditUserPage = () => {
         rate: yup.string()
             .required("Rate is required")
             .matches(/[0-9]$/, "Rate must contain only numbers")
-            .matches(/^(\d){1,3}$/g, "Rate must contain not more than 3 digits"),
+            .matches(/^[0-5]/, "Rate cannot be more than 5")
+            .matches(/^\d(\.\d)?$/, "Rate should look like n.n"),
         email: yup.string()
             .required("Email is required")
             .email("Email is not correct"),
