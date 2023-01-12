@@ -16,6 +16,10 @@ const EditUserPage = () => {
     const [errors, setErrors] = useState({});
 
     const validateSchema = yup.object().shape({
+        completedMeetings: yup.string()
+            .required("Completed Meetings is required")
+            .matches(/[0-9]$/, "Completed Meetings must contain only numbers")
+            .matches(/^(\d){1,3}$/g, "Completed Meetings must contain not more than 3 digits"),
         rate: yup.string()
             .required("Rate is required")
             .matches(/[0-9]$/, "Rate must contain only numbers")
@@ -87,7 +91,12 @@ const EditUserPage = () => {
                                 error={errors.rate}
                                 onChange={handelChange}
                             />
-
+                            <TextFiled
+                                label={"Complete Meetings"}
+                                name={"completedMeetings"}
+                                value={data.completedMeetings}
+                                error={errors.completedMeetings}
+                                onChange={handelChange}/>
                             <button
                                 type={"submit"}
                                 className={"btn btn-success w-100 mx-auto"}
