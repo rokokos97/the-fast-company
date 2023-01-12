@@ -18,7 +18,14 @@ const EditUserPage = () => {
     const [isLoading] = useState(false);
     const [professions, setProfessions] = useState([]);
     useEffect(() => {
-        api.professions.fetchAll().then((data) => setProfessions(data));
+        api.professions.fetchAll().then((data) => {
+            const professionList =
+            Object.keys(data).map((profession) => (
+                { label: data[profession].name, value: data[profession]._id }
+            ));
+            setProfessions(professionList);
+            console.log("professionList", professionList);
+        });
     }, []);
 
     const validateSchema = yup.object().shape({
