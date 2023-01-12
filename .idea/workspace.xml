@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create editUserPage">
-      <change afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/index.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create routh to EditUserPage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,14 +120,7 @@
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
-      <workItem from="1673470003438" duration="1949000" />
-    </task>
-    <task id="LOCAL-00056" summary="create validator.js in utils">
-      <created>1672910001249</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1672910001249</updated>
+      <workItem from="1673470003438" duration="3955000" />
     </task>
     <task id="LOCAL-00057" summary="create validator.js in utils">
       <created>1672910490209</created>
@@ -469,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673471097262</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="create routh to EditUserPage">
+      <created>1673472178778</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1673472178779</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactoring and change folder structure of project" />
     <MESSAGE value="transfer part of loginForm into login.jsx" />
     <MESSAGE value="login.jsx add new state formType" />
     <MESSAGE value="app.js =&gt; add new parametr &quot;type&quot; to &#10;&lt;Route path=&quot;/login/:type?&quot; component={Login} /&gt;" />
@@ -512,7 +507,8 @@
     <MESSAGE value="add validationSchema for Yup" />
     <MESSAGE value="refactoring and debug =&gt; registerForm.jsx =&gt; &lt;SelectedField&gt; add name=&quot;professions&quot;" />
     <MESSAGE value="create editUserPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="create editUserPage" />
+    <MESSAGE value="create routh to EditUserPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="create routh to EditUserPage" />
   </component>
   <component name="regexState">
     <option name="map">

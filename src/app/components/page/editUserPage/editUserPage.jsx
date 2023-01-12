@@ -4,19 +4,24 @@ import * as yup from "yup";
 
 const EditUserPage = () => {
     const [data, setData] = useState({
+        name: "",
         email: "",
-        password: "",
         profession: "",
+        rate: "",
+        completedMeetings: "",
         sex: "male",
-        qualities: [{}],
-        license: false
+        qualities: [{}]
     });
     const [errors, setErrors] = useState({});
 
     const validateSchema = yup.object().shape({
         email: yup.string()
             .required("Email is required")
-            .email("Email is not correct")
+            .email("Email is not correct"),
+        name: yup.string()
+            .required("Name is required")
+            .matches(/(?=.*[A-Z])/, "Name must contain capital latter")
+            .matches(/(?=.{2,})/, "Name must contain at least 2 letters")
     });
     const handelChange = (target) => {
         setData((prevState) =>
@@ -30,21 +35,26 @@ const EditUserPage = () => {
     };
     useEffect(() => { validate(); }, [data]);
     const validate = () => {
-        // const errors = validator(data, validatorConfig);
         validateSchema
             .validate(data)
             .then(() => setErrors({}))
             .catch((err) => setErrors({ [err.path]: err.message }));
-        // setErrors(errors);
+
         return Object.keys(errors).length === 0;
     };
     const isValid = Object.keys(errors).length === 0;
     return (<>
         <div className="container">
             <div className="row">
-                <div className="card text-center col-md-6 offset-md-3">
+                <div className="card col-md-6 offset-md-3">
                     <div className="card-body">
                         <form onSubmit={handelSubmit} className={""}>
+                            <TextFiled
+                                label={"Name"}
+                                name={"name"}
+                                value={data.name}
+                                error={errors.name}
+                                onChange={handelChange}/>
                             <TextFiled
                                 label={"Email"}
                                 name={"email"}
