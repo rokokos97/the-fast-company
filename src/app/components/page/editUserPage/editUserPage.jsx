@@ -18,7 +18,7 @@ const EditUserPage = () => {
         qualities: [{}]
     });
     const [errors, setErrors] = useState({});
-    const [isLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     const [professions, setProfessions] = useState([]);
     const [qualities, setQualities] = useState({});
     const { userId } = useParams();
@@ -53,7 +53,10 @@ const EditUserPage = () => {
             console.log("qualitiesList", qualitiesList);
         });
     }, []);
-    useEffect(() => { validate(); }, [data]);
+    useEffect(() => {
+        validate();
+        if (data._id) setIsLoading(false);
+    }, [data]);
     // const getQuality = (ItemsArr, qualities) => {
     //     const userQualities = [];
     //     for (const item of ItemsArr) {
