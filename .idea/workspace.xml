@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="sanding user info">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add getQual =&gt; transform qualities look like {name: ..., _id:..., color:...}&#10;add getProfessionById">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,14 +119,7 @@
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
-      <workItem from="1673470003438" duration="22226000" />
-    </task>
-    <task id="LOCAL-00068" summary="add method handleSearchQuery">
-      <created>1672959256618</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1672959256618</updated>
+      <workItem from="1673470003438" duration="22848000" />
     </task>
     <task id="LOCAL-00069" summary="add reset searchQuery in handleProfessionSelect&#10;add reset selectedProf in handleSearchQuery">
       <created>1672959756994</created>
@@ -465,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673561537540</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="add getQual =&gt; transform qualities look like {name: ..., _id:..., color:...}&#10;add getProfessionById">
+      <created>1673565106914</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1673565106914</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create radioField.jsx" />
     <MESSAGE value="install react-select" />
     <MESSAGE value="registrationForm.jsx =&gt; Select from react-select" />
     <MESSAGE value="add fake api from qualities" />
@@ -508,7 +506,8 @@
     <MESSAGE value="editUserPage.jsx =&gt; &#10;add useEffect with loading profession from api and transform profession object look like {label: ..., value:...,}" />
     <MESSAGE value="editUserPage.jsx =&gt; &#10;complete transfer user parameters to editUserPage" />
     <MESSAGE value="sanding user info" />
-    <option name="LAST_COMMIT_MESSAGE" value="sanding user info" />
+    <MESSAGE value="add getQual =&gt; transform qualities look like {name: ..., _id:..., color:...}&#10;add getProfessionById" />
+    <option name="LAST_COMMIT_MESSAGE" value="add getQual =&gt; transform qualities look like {name: ..., _id:..., color:...}&#10;add getProfessionById" />
   </component>
   <component name="regexState">
     <option name="map">
