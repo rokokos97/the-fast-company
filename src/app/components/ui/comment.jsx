@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import api from "../../api";
 
-const Comment = (name, time, content) => {
-    return <>
+const Comment = ({ content, created_at: create, id_: id, userId }) => {
+    const [user, setUser] = useState(null);
+    useEffect(() => {
+        api.users.getById(userId).then((data) => setUser(data));
+    }, []);
+    console.log("user", user);
+    return <> { user &&
         <div className="bg-light card-body  mb-3">
             <div className="row">
                 <div className="col">
@@ -18,9 +24,9 @@ const Comment = (name, time, content) => {
                             <div className="mb-4">
                                 <div className="d-flex justify-content-between align-items-center">
                                     <p className="mb-1 ">
-                                        {name}
+                                        {user.name}
                                         <span className="small">
-                                            {time}
+                                            {create}
                                         </span>
                                     </p>
                                     <button className="btn btn-sm text-primary d-flex align-items-center">
@@ -33,11 +39,14 @@ const Comment = (name, time, content) => {
                     </div>
                 </div>
             </div>
-        </div></>;
+        </div>
+    }
+    </>;
 };
 Comment.propTypes = {
-    name: PropTypes.string,
-    time: PropTypes.number,
-    content: PropTypes.string
+    content: PropTypes.string,
+    created_at: PropTypes.string,
+    id_: PropTypes.string,
+    userId: PropTypes.string
 };
 export default Comment;

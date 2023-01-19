@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create Comment component comment.jsx">
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/qualities/commentsList.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create CommentsList component commentsList.jsx">
+      <change afterPath="$PROJECT_DIR$/src/app/api/fake.api/comments.api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ui/comment.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ui/commentsCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ui/commentsList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ui/meetingCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ui/qualitiesCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ui/userCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/qualities/comment.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/qualities/commentsList.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +78,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/rokokos97/WebstormProjects/the-fast-company/src/app/components/page/EditUserPage&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rokokos97/WebstormProjects/the-fast-company/src/app/api/fake.api&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -83,18 +94,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/api/fake.api" />
       <recent name="$PROJECT_DIR$/src/app/components/page/EditUserPage" />
       <recent name="$PROJECT_DIR$/src/app/api" />
       <recent name="$PROJECT_DIR$/src/app/components/ui" />
       <recent name="$PROJECT_DIR$/src/app/components/page/usersListPage" />
-      <recent name="$PROJECT_DIR$/src/app/components/layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/components/ui" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/app/components/page/usersListPage" />
       <recent name="$PROJECT_DIR$/src/app/components/page/userPage" />
-      <recent name="$PROJECT_DIR$/src/app/components/ ui" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -121,21 +132,8 @@
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
-      <workItem from="1674085741535" duration="4238000" />
-    </task>
-    <task id="LOCAL-00062" summary="add parameter disabled to submit button">
-      <created>1672933420567</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1672933420567</updated>
-    </task>
-    <task id="LOCAL-00063" summary="add styles to form Login">
-      <created>1672936007966</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1672936007966</updated>
+      <workItem from="1674085741535" duration="17594000" />
+      <workItem from="1674148791546" duration="6914000" />
     </task>
     <task id="LOCAL-00064" summary="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx">
       <created>1672958111048</created>
@@ -466,7 +464,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674118883638</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="create CommentsList component commentsList.jsx">
+      <created>1674119304250</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1674119304250</updated>
+    </task>
+    <task id="LOCAL-00112" summary="create CommentsList component commentsList.jsx">
+      <created>1674119311831</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1674119311831</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login.jsx =&gt; add iteration profession and making &lt;obtions&gt; for profession" />
     <MESSAGE value="selectedFild.jsx =&gt; add validation errors" />
     <MESSAGE value="add RadioField to registerForm" />
     <MESSAGE value="create radioField.jsx" />
@@ -509,7 +520,8 @@
     <MESSAGE value="week_9_form_2 complete" />
     <MESSAGE value="restyle users page&#10;add button edit user page" />
     <MESSAGE value="create Comment component comment.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Comment component comment.jsx" />
+    <MESSAGE value="create CommentsList component commentsList.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="create CommentsList component commentsList.jsx" />
   </component>
   <component name="regexState">
     <option name="map">
