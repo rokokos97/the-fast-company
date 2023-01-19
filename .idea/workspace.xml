@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="week_9_form_2 complete">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="restyle users page&#10;add button edit user page">
+      <change afterPath="$PROJECT_DIR$/src/app/components/ui/qualities/comment.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,14 +121,7 @@
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
-      <workItem from="1674085741535" duration="1710000" />
-    </task>
-    <task id="LOCAL-00059" summary="add regEx by email to validatorConfig&#10;fix validator config =&gt; add one more requirement by field =&gt; (error &amp;&amp; !errors[fieldName])">
-      <created>1672916454568</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1672916454568</updated>
+      <workItem from="1674085741535" duration="3750000" />
     </task>
     <task id="LOCAL-00060" summary="add any validations by password">
       <created>1672932686048</created>
@@ -466,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673719093271</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="restyle users page&#10;add button edit user page">
+      <created>1674087511880</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1674087511881</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login.jsx =&gt; add changing form register&lt;=&gt;login" />
     <MESSAGE value="login.jsx =&gt; add new state for profession" />
     <MESSAGE value="login.jsx =&gt; add iteration profession and making &lt;obtions&gt; for profession" />
     <MESSAGE value="selectedFild.jsx =&gt; add validation errors" />
@@ -509,7 +508,8 @@
     <MESSAGE value="userPage.jsx =&gt; edit button" />
     <MESSAGE value="editUserPage.jsx =&gt; saving user info to local storage" />
     <MESSAGE value="week_9_form_2 complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="week_9_form_2 complete" />
+    <MESSAGE value="restyle users page&#10;add button edit user page" />
+    <option name="LAST_COMMIT_MESSAGE" value="restyle users page&#10;add button edit user page" />
   </component>
   <component name="regexState">
     <option name="map">
