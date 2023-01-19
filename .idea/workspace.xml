@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create CommentsList component commentsList.jsx">
-      <change afterPath="$PROJECT_DIR$/src/app/api/fake.api/comments.api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/comment.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/commentsCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/commentsList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/meetingCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/qualitiesCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/userCard.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add comments">
+      <change afterPath="$PROJECT_DIR$/src/app/utils/commentTime.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/qualities/comment.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/qualities/commentsList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comment.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,14 +123,7 @@
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
       <workItem from="1674085741535" duration="17594000" />
-      <workItem from="1674148791546" duration="6914000" />
-    </task>
-    <task id="LOCAL-00064" summary="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx">
-      <created>1672958111048</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1672958111048</updated>
+      <workItem from="1674148791546" duration="10919000" />
     </task>
     <task id="LOCAL-00065" summary="add one more filtration users by searshQuery">
       <created>1672958799446</created>
@@ -478,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674119311831</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="add comments">
+      <created>1674163245910</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1674163245910</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="selectedFild.jsx =&gt; add validation errors" />
     <MESSAGE value="add RadioField to registerForm" />
     <MESSAGE value="create radioField.jsx" />
     <MESSAGE value="install react-select" />
@@ -521,7 +510,8 @@
     <MESSAGE value="restyle users page&#10;add button edit user page" />
     <MESSAGE value="create Comment component comment.jsx" />
     <MESSAGE value="create CommentsList component commentsList.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="create CommentsList component commentsList.jsx" />
+    <MESSAGE value="add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments" />
   </component>
   <component name="regexState">
     <option name="map">

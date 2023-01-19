@@ -7,14 +7,30 @@ const Comment = ({ content, created_at: create, id_: id, userId }) => {
     useEffect(() => {
         api.users.getById(userId).then((data) => setUser(data));
     }, []);
-    console.log("user", user);
+    const commentLeft = (timeStamp) => {
+        const timePassed = Date.now() - timeStamp;
+        console.log(timePassed);
+        if (timePassed < 1000 * 60) { return "1 minutes left"; }
+        if (timePassed > 1000 * 60 && timePassed < 1000 * 60 * 5) { return " - 5 minutes left"; }
+        if (timePassed > 1000 * 60 * 5 && timePassed < 1000 * 60 * 10) { return " - 10 minutes left"; }
+        if (timePassed > 1000 * 60 * 10 && timePassed < 1000 * 60 * 30) { return " - 30 minutes left"; }
+        if (timePassed > 1000 * 60 * 60 && timePassed < 1000 * 60 * 60 * 24) { return " - day left"; }
+        if (timePassed > 1000 * 60 * 60 * 24 && timePassed < 1000 * 60 * 60 * 24 * 31) { return " - month left"; }
+        if (timePassed > 1000 * 60 * 60 * 24 * 31 && timePassed < 1000 * 60 * 60 * 24 * 31) { return " - few month left"; }
+        if (timePassed > 1000 * 60 * 60 * 24 * 31 * 12) { return " - more then year left"; }
+    };
+    console.log(commentLeft(create));
     return <> { user &&
         <div className="bg-light card-body  mb-3">
             <div className="row">
                 <div className="col">
                     <div className="d-flex flex-start ">
                         <img
-                            src="https://avatars.dicebear.com/api/avataaars/qweqwdas"
+                            src={`https://avatars.dicebear.com/api/avataaars/${(
+                                Math.random() + 1
+                            )
+                                .toString(36)
+                                .substring(7)}.svg`}
                             className="rounded-circle shadow-1-strong me-3"
                             alt="avatar"
                             width="65"
@@ -26,7 +42,7 @@ const Comment = ({ content, created_at: create, id_: id, userId }) => {
                                     <p className="mb-1 ">
                                         {user.name}
                                         <span className="small">
-                                            {create}
+                                            {commentLeft(create)}
                                         </span>
                                     </p>
                                     <button className="btn btn-sm text-primary d-flex align-items-center">
