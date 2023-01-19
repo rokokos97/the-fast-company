@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import api from "../../../api";
 import QualitiesList from "../../ui/qualities/qualitiesList";
 import { useHistory } from "react-router-dom";
-import Comment from "../../ui/qualities/comment";
+import CommentsList from "../../ui/qualities/commentsList";
 
 const UserPage = ({ userId }) => {
     const history = useHistory();
@@ -70,17 +70,17 @@ const UserPage = ({ userId }) => {
                             </div>
                         </div>
                         <div className="col-md-8">
-                            {/*<div className="card mb-2">*/}
-                            {/*    {" "}*/}
-                            {/*    <div className="card-body ">*/}
-                            {/*        //add comment*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
+                            <div className="card mb-2">
+                                {" "}
+                                <div className="card-body ">
+                                    {"add comment"}
+                                </div>
+                            </div>
                             <div className="card mb-3">
                                 <div className="card-body ">
                                     <h2>Comments</h2>
                                     <hr/>
-                                    <Comment/>
+                                    <CommentsList/>
                                 </div>
                             </div>
                         </div>
