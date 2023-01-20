@@ -30,6 +30,7 @@ const Comment = ({ content, created_at: create, _id: id, userId, onDelete }) => 
                                     <p className="mb-1 ">
                                         {user.name}
                                         <span className="small">
+                                            { }
                                             {displayTime(create)}
                                         </span>
                                     </p>
@@ -50,7 +51,7 @@ const Comment = ({ content, created_at: create, _id: id, userId, onDelete }) => 
 Comment.propTypes = {
     onDelete: PropTypes.func,
     content: PropTypes.string,
-    created_at: PropTypes.string,
+    created_at: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     _id: PropTypes.string,
     userId: PropTypes.string
 };

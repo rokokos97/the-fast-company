@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create addComment.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="AddComment complete">
+      <change afterPath="$PROJECT_DIR$/src/app/components/common/form/textAreaField.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/addComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/addComment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comment.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/commentsCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/commentsCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/displayTime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/displayTime.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,32 +66,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/rokokos97/WebstormProjects/the-fast-company/src/app/api/fake.api&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/components/common/form",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/components/common/form" />
       <recent name="$PROJECT_DIR$/src/app/api/fake.api" />
       <recent name="$PROJECT_DIR$/src/app/components/page/EditUserPage" />
       <recent name="$PROJECT_DIR$/src/app/api" />
       <recent name="$PROJECT_DIR$/src/app/components/ui" />
-      <recent name="$PROJECT_DIR$/src/app/components/page/usersListPage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/components/ui" />
@@ -123,14 +126,7 @@
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
       <workItem from="1674085741535" duration="17594000" />
-      <workItem from="1674148791546" duration="24251000" />
-    </task>
-    <task id="LOCAL-00069" summary="add reset searchQuery in handleProfessionSelect&#10;add reset selectedProf in handleSearchQuery">
-      <created>1672959756994</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1672959756994</updated>
+      <workItem from="1674148791546" duration="26684000" />
     </task>
     <task id="LOCAL-00070" summary="add style to userPage.jsx">
       <created>1672998915017</created>
@@ -468,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674226012736</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="AddComment complete">
+      <created>1674235119229</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1674235119229</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="registrationForm.jsx =&gt; Select from react-select" />
     <MESSAGE value="add fake api from qualities" />
     <MESSAGE value="creat new component MultiselectField.jsx" />
     <MESSAGE value="add error to multiselectField.jsx" />
@@ -511,7 +513,8 @@
     <MESSAGE value="add comments with time" />
     <MESSAGE value="add displayTime.js pattern from date of comment&#10;commentsCard.jsx =&gt; add logic from button delete comment" />
     <MESSAGE value="create addComment.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="create addComment.jsx" />
+    <MESSAGE value="AddComment complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddComment complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

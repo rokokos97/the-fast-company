@@ -16,11 +16,16 @@ const CommentsCard = () => {
         api.comments.remove(id).then((data) => setComments(comments.filter((comment) => comment._id !== data)));
         console.log(id);
     };
+    const handleSubmit = (data) => {
+        api.comments
+            .add({ ...data, pageId: userId })
+            .then((data) => setComments([...comments, data]));
+    };
     return <>
         <div className="card mb-2">
             {" "}
             <div className="card-body ">
-                <AddComment/>
+                <AddComment onSubmit={handleSubmit}/>
             </div>
         </div>
         {sortedComments.length > 0 &&

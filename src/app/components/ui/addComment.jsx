@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { validator } from "../../utils/validator";
-import TextFiled from "../common/form/textField";
 import api from "../../api";
 import SelectedField from "../common/form/selectedFild";
+import TextAreaFiled from "../common/form/textAreaField";
+import PropTypes from "prop-types";
 
-const AddComment = () => {
+const AddComment = ({ onSubmit }) => {
     const [users, setUsers] = useState([]);
     const [data, setData] = useState({
-        user: "",
+        userId: "",
         message: ""
     });
     const [errors, setErrors] = useState({});
@@ -33,14 +34,19 @@ const AddComment = () => {
         const isValid = validate();
         if (!isValid) return;
         console.log(data);
+        setData({
+            userId: "",
+            content: ""
+        });
+        onSubmit(data);
     };
     useEffect(() => { validate(); }, [data]);
 
     const validatorConfig = {
-        user: {
+        userId: {
             isRequired: { message: "User is required" }
         },
-        message: {
+        content: {
             isRequired: { message: "Message is required" }
         }
     };
@@ -54,29 +60,30 @@ const AddComment = () => {
         <form onSubmit={handelSubmit} className={""}>
             <SelectedField
                 label={"Choose name of user"}
-                name={"user"}
+                name={"userId"}
                 defaultOption={"Choose..."}
                 options={users}
                 onChange={handelChange}
-                value={data.user}
-                error={errors.user}
+                value={data.userId}
+                error={errors.userId}
             />
-            <TextFiled
+            <TextAreaFiled
                 label={"Message"}
-                name={"message"}
-                value={data.message}
+                name={"content"}
+                value={data.content}
                 onChange={handelChange}
-                error={errors.message}
-            />
+                error={errors.content}/>
             <button
                 type={"submit"}
                 className={"btn btn-success w-100 mx-auto"}
                 disabled={!isValid}
             >
-                Submit
+                Add comment
             </button>
         </form>
     </>);
 };
-
+AddComment.propTypes = {
+    onSubmit: PropTypes.func
+};
 export default AddComment;
