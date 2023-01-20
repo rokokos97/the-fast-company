@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add displayTime.js pattern from date of comment&#10;commentsCard.jsx =&gt; add logic from button delete comment">
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/addComment.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create addComment.jsx">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/addComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/addComment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/commentsCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/commentsCard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,21 +123,7 @@
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
       <workItem from="1674085741535" duration="17594000" />
-      <workItem from="1674148791546" duration="21497000" />
-    </task>
-    <task id="LOCAL-00067" summary="add method handleSearchQuery">
-      <created>1672959224842</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1672959224842</updated>
-    </task>
-    <task id="LOCAL-00068" summary="add method handleSearchQuery">
-      <created>1672959256618</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1672959256618</updated>
+      <workItem from="1674148791546" duration="24251000" />
     </task>
     <task id="LOCAL-00069" summary="add reset searchQuery in handleProfessionSelect&#10;add reset selectedProf in handleSearchQuery">
       <created>1672959756994</created>
@@ -466,7 +454,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674224795624</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="create addComment.jsx">
+      <created>1674225968062</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1674225968062</updated>
+    </task>
+    <task id="LOCAL-00117" summary="create addComment.jsx">
+      <created>1674226012736</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1674226012736</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="install react-select" />
     <MESSAGE value="registrationForm.jsx =&gt; Select from react-select" />
     <MESSAGE value="add fake api from qualities" />
     <MESSAGE value="creat new component MultiselectField.jsx" />
@@ -509,7 +510,20 @@
     <MESSAGE value="add comments" />
     <MESSAGE value="add comments with time" />
     <MESSAGE value="add displayTime.js pattern from date of comment&#10;commentsCard.jsx =&gt; add logic from button delete comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="add displayTime.js pattern from date of comment&#10;commentsCard.jsx =&gt; add logic from button delete comment" />
+    <MESSAGE value="create addComment.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="create addComment.jsx" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/components/ui/registerForm.jsx</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="regexState">
     <option name="map">

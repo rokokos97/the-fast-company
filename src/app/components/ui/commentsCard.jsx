@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import api from "../../api";
 import _ from "lodash";
 import CommentsList from "./commentsList";
+import AddComment from "./addComment";
 
 const CommentsCard = () => {
     const { userId } = useParams();
@@ -19,7 +20,7 @@ const CommentsCard = () => {
         <div className="card mb-2">
             {" "}
             <div className="card-body ">
-                add comment
+                <AddComment/>
             </div>
         </div>
         {sortedComments.length > 0 &&
