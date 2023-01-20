@@ -1,25 +1,13 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import api from "../../api";
+import { displayTime } from "../../utils/displayTime";
 
-const Comment = ({ content, created_at: create, id_: id, userId }) => {
+const Comment = ({ content, created_at: create, _id: id, userId, onDelete }) => {
     const [user, setUser] = useState(null);
     useEffect(() => {
         api.users.getById(userId).then((data) => setUser(data));
     }, []);
-    const commentLeft = (timeStamp) => {
-        const timePassed = Date.now() - timeStamp;
-        console.log(timePassed);
-        if (timePassed < 1000 * 60) { return "1 minutes left"; }
-        if (timePassed > 1000 * 60 && timePassed < 1000 * 60 * 5) { return " - 5 minutes left"; }
-        if (timePassed > 1000 * 60 * 5 && timePassed < 1000 * 60 * 10) { return " - 10 minutes left"; }
-        if (timePassed > 1000 * 60 * 10 && timePassed < 1000 * 60 * 30) { return " - 30 minutes left"; }
-        if (timePassed > 1000 * 60 * 60 && timePassed < 1000 * 60 * 60 * 24) { return " - day left"; }
-        if (timePassed > 1000 * 60 * 60 * 24 && timePassed < 1000 * 60 * 60 * 24 * 31) { return " - month left"; }
-        if (timePassed > 1000 * 60 * 60 * 24 * 31 && timePassed < 1000 * 60 * 60 * 24 * 31) { return " - few month left"; }
-        if (timePassed > 1000 * 60 * 60 * 24 * 31 * 12) { return " - more then year left"; }
-    };
-    console.log(commentLeft(create));
     return <> { user &&
         <div className="bg-light card-body  mb-3">
             <div className="row">
@@ -42,10 +30,10 @@ const Comment = ({ content, created_at: create, id_: id, userId }) => {
                                     <p className="mb-1 ">
                                         {user.name}
                                         <span className="small">
-                                            {commentLeft(create)}
+                                            {displayTime(create)}
                                         </span>
                                     </p>
-                                    <button className="btn btn-sm text-primary d-flex align-items-center">
+                                    <button className="btn btn-sm text-primary d-flex align-items-center" onClick={() => { onDelete(id); }}>
                                         <i className="bi bi-x-lg"></i>
                                     </button>
                                 </div>
@@ -60,9 +48,10 @@ const Comment = ({ content, created_at: create, id_: id, userId }) => {
     </>;
 };
 Comment.propTypes = {
+    onDelete: PropTypes.func,
     content: PropTypes.string,
     created_at: PropTypes.string,
-    id_: PropTypes.string,
+    _id: PropTypes.string,
     userId: PropTypes.string
 };
 export default Comment;
