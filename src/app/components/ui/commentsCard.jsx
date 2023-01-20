@@ -18,7 +18,7 @@ const CommentsCard = () => {
     };
     const handleSubmit = (data) => {
         api.comments
-            .add({ ...data, pageId: userId })
+            .add({ content: data.content, userId: data.user, pageId: userId })
             .then((data) => setComments([...comments, data]));
     };
     return <>

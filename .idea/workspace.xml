@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="AddComment complete">
-      <change afterPath="$PROJECT_DIR$/src/app/components/common/form/textAreaField.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add comment data to api.comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/addComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/addComment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comment.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/commentsCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/commentsCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utils/displayTime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/displayTime.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,14 +123,7 @@
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
       <workItem from="1674085741535" duration="17594000" />
-      <workItem from="1674148791546" duration="26684000" />
-    </task>
-    <task id="LOCAL-00070" summary="add style to userPage.jsx">
-      <created>1672998915017</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1672998915018</updated>
+      <workItem from="1674148791546" duration="27336000" />
     </task>
     <task id="LOCAL-00071" summary="refactoring and change folder structure of project">
       <created>1673001011527</created>
@@ -471,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674235119229</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="add comment data to api.comment">
+      <created>1674237440001</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1674237440001</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add fake api from qualities" />
     <MESSAGE value="creat new component MultiselectField.jsx" />
     <MESSAGE value="add error to multiselectField.jsx" />
     <MESSAGE value="create checkBoxField.jsx" />
@@ -514,7 +510,8 @@
     <MESSAGE value="add displayTime.js pattern from date of comment&#10;commentsCard.jsx =&gt; add logic from button delete comment" />
     <MESSAGE value="create addComment.jsx" />
     <MESSAGE value="AddComment complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddComment complete" />
+    <MESSAGE value="add comment data to api.comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comment data to api.comment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

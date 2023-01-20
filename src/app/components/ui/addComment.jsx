@@ -8,8 +8,8 @@ import PropTypes from "prop-types";
 const AddComment = ({ onSubmit }) => {
     const [users, setUsers] = useState([]);
     const [data, setData] = useState({
-        userId: "",
-        message: ""
+        user: "",
+        content: ""
     });
     const [errors, setErrors] = useState({});
 
@@ -35,7 +35,7 @@ const AddComment = ({ onSubmit }) => {
         if (!isValid) return;
         console.log(data);
         setData({
-            userId: "",
+            user: "",
             content: ""
         });
         onSubmit(data);
@@ -43,7 +43,7 @@ const AddComment = ({ onSubmit }) => {
     useEffect(() => { validate(); }, [data]);
 
     const validatorConfig = {
-        userId: {
+        user: {
             isRequired: { message: "User is required" }
         },
         content: {
@@ -60,12 +60,12 @@ const AddComment = ({ onSubmit }) => {
         <form onSubmit={handelSubmit} className={""}>
             <SelectedField
                 label={"Choose name of user"}
-                name={"userId"}
+                name={"user"}
                 defaultOption={"Choose..."}
                 options={users}
                 onChange={handelChange}
-                value={data.userId}
-                error={errors.userId}
+                value={data.user}
+                error={errors.user}
             />
             <TextAreaFiled
                 label={"Message"}
