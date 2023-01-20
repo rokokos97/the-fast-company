@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="userPage.jsx =&gt; edit button">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add comment data to api.comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
     </list>
@@ -23,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="week_5_filtration" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,8 +38,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="develop_pagination_homework" />
-                    <option name="lastUsedInstant" value="1671635075" />
+                    <option name="branchName" value="week_11_develop" />
+                    <option name="lastUsedInstant" value="1674087129" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -67,7 +67,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/components/page/EditUserPage",
+    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/components/common/form",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -83,18 +83,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/components/common/form" />
+      <recent name="$PROJECT_DIR$/src/app/api/fake.api" />
       <recent name="$PROJECT_DIR$/src/app/components/page/EditUserPage" />
       <recent name="$PROJECT_DIR$/src/app/api" />
       <recent name="$PROJECT_DIR$/src/app/components/ui" />
-      <recent name="$PROJECT_DIR$/src/app/components/page/usersListPage" />
-      <recent name="$PROJECT_DIR$/src/app/components/layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/components/ui" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/app/components/page/usersListPage" />
       <recent name="$PROJECT_DIR$/src/app/components/page/userPage" />
-      <recent name="$PROJECT_DIR$/src/app/components/ ui" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -121,111 +121,8 @@
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
-    </task>
-    <task id="LOCAL-00057" summary="create validator.js in utils">
-      <created>1672910490209</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1672910490209</updated>
-    </task>
-    <task id="LOCAL-00058" summary="create validator.js in utils">
-      <created>1672914472811</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1672914472811</updated>
-    </task>
-    <task id="LOCAL-00059" summary="add regEx by email to validatorConfig&#10;fix validator config =&gt; add one more requirement by field =&gt; (error &amp;&amp; !errors[fieldName])">
-      <created>1672916454568</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1672916454568</updated>
-    </task>
-    <task id="LOCAL-00060" summary="add any validations by password">
-      <created>1672932686048</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1672932686048</updated>
-    </task>
-    <task id="LOCAL-00061" summary="add parameter disabled to submit button">
-      <created>1672933394213</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1672933394213</updated>
-    </task>
-    <task id="LOCAL-00062" summary="add parameter disabled to submit button">
-      <created>1672933420567</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1672933420567</updated>
-    </task>
-    <task id="LOCAL-00063" summary="add styles to form Login">
-      <created>1672936007966</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1672936007966</updated>
-    </task>
-    <task id="LOCAL-00064" summary="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx">
-      <created>1672958111048</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1672958111048</updated>
-    </task>
-    <task id="LOCAL-00065" summary="add one more filtration users by searshQuery">
-      <created>1672958799446</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1672958799446</updated>
-    </task>
-    <task id="LOCAL-00066" summary="add one more filtration users by searshQuery">
-      <created>1672958833139</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1672958833139</updated>
-    </task>
-    <task id="LOCAL-00067" summary="add method handleSearchQuery">
-      <created>1672959224842</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1672959224842</updated>
-    </task>
-    <task id="LOCAL-00068" summary="add method handleSearchQuery">
-      <created>1672959256618</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1672959256618</updated>
-    </task>
-    <task id="LOCAL-00069" summary="add reset searchQuery in handleProfessionSelect&#10;add reset selectedProf in handleSearchQuery">
-      <created>1672959756994</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1672959756994</updated>
-    </task>
-    <task id="LOCAL-00070" summary="add style to userPage.jsx">
-      <created>1672998915017</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1672998915018</updated>
-    </task>
-    <task id="LOCAL-00071" summary="refactoring and change folder structure of project">
-      <created>1673001011527</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1673001011527</updated>
+      <workItem from="1674085741535" duration="17594000" />
+      <workItem from="1674148791546" duration="28714000" />
     </task>
     <task id="LOCAL-00072" summary="refactoring and change folder structure of project">
       <created>1673003533357</created>
@@ -465,7 +362,112 @@
       <option name="project" value="LOCAL" />
       <updated>1673718256048</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="editUserPage.jsx =&gt; saving user info to local storage">
+      <created>1673719052198</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1673719052198</updated>
+    </task>
+    <task id="LOCAL-00107" summary="week_9_form_2 complete">
+      <created>1673719093271</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1673719093271</updated>
+    </task>
+    <task id="LOCAL-00108" summary="restyle users page&#10;add button edit user page">
+      <created>1674087511880</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1674087511881</updated>
+    </task>
+    <task id="LOCAL-00109" summary="create Comment component comment.jsx">
+      <created>1674118824088</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1674118824088</updated>
+    </task>
+    <task id="LOCAL-00110" summary="create Comment component comment.jsx">
+      <created>1674118883638</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1674118883638</updated>
+    </task>
+    <task id="LOCAL-00111" summary="create CommentsList component commentsList.jsx">
+      <created>1674119304250</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1674119304250</updated>
+    </task>
+    <task id="LOCAL-00112" summary="create CommentsList component commentsList.jsx">
+      <created>1674119311831</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1674119311831</updated>
+    </task>
+    <task id="LOCAL-00113" summary="add comments">
+      <created>1674163245910</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1674163245910</updated>
+    </task>
+    <task id="LOCAL-00114" summary="add comments with time">
+      <created>1674167276567</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1674167276567</updated>
+    </task>
+    <task id="LOCAL-00115" summary="add displayTime.js pattern from date of comment&#10;commentsCard.jsx =&gt; add logic from button delete comment">
+      <created>1674224795624</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1674224795624</updated>
+    </task>
+    <task id="LOCAL-00116" summary="create addComment.jsx">
+      <created>1674225968062</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1674225968062</updated>
+    </task>
+    <task id="LOCAL-00117" summary="create addComment.jsx">
+      <created>1674226012736</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1674226012736</updated>
+    </task>
+    <task id="LOCAL-00118" summary="AddComment complete">
+      <created>1674235119229</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1674235119229</updated>
+    </task>
+    <task id="LOCAL-00119" summary="add comment data to api.comment">
+      <created>1674237440001</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1674237440001</updated>
+    </task>
+    <task id="LOCAL-00120" summary="add comment data to api.comment">
+      <created>1674238053875</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1674238053875</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,17 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login.jsx =&gt; add useParams add check &quot;type&quot; in useState" />
-    <MESSAGE value="login.jsx =&gt; add method toggleFormType" />
-    <MESSAGE value="login.jsx =&gt; add changing form register&lt;=&gt;login" />
-    <MESSAGE value="login.jsx =&gt; add new state for profession" />
-    <MESSAGE value="login.jsx =&gt; add iteration profession and making &lt;obtions&gt; for profession" />
-    <MESSAGE value="selectedFild.jsx =&gt; add validation errors" />
-    <MESSAGE value="add RadioField to registerForm" />
-    <MESSAGE value="create radioField.jsx" />
-    <MESSAGE value="install react-select" />
-    <MESSAGE value="registrationForm.jsx =&gt; Select from react-select" />
-    <MESSAGE value="add fake api from qualities" />
     <MESSAGE value="creat new component MultiselectField.jsx" />
     <MESSAGE value="add error to multiselectField.jsx" />
     <MESSAGE value="create checkBoxField.jsx" />
@@ -508,7 +499,30 @@
     <MESSAGE value="editUserPage.jsx transfer user data from api to editUserPage.jsx" />
     <MESSAGE value="editUserPage.jsx add errors" />
     <MESSAGE value="userPage.jsx =&gt; edit button" />
-    <option name="LAST_COMMIT_MESSAGE" value="userPage.jsx =&gt; edit button" />
+    <MESSAGE value="editUserPage.jsx =&gt; saving user info to local storage" />
+    <MESSAGE value="week_9_form_2 complete" />
+    <MESSAGE value="restyle users page&#10;add button edit user page" />
+    <MESSAGE value="create Comment component comment.jsx" />
+    <MESSAGE value="create CommentsList component commentsList.jsx" />
+    <MESSAGE value="add comments" />
+    <MESSAGE value="add comments with time" />
+    <MESSAGE value="add displayTime.js pattern from date of comment&#10;commentsCard.jsx =&gt; add logic from button delete comment" />
+    <MESSAGE value="create addComment.jsx" />
+    <MESSAGE value="AddComment complete" />
+    <MESSAGE value="add comment data to api.comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comment data to api.comment" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/components/ui/registerForm.jsx</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="regexState">
     <option name="map">

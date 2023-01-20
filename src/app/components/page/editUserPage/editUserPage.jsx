@@ -114,6 +114,9 @@ const EditUserPage = () => {
         return Object.keys(errors).length === 0;
     };
     const isValid = Object.keys(errors).length === 0;
+    const handleClick = () => {
+        history.push(`/users/${data._id}`);
+    };
     return (<div className="container">
         <div className="row">
             {(!isLoading && Object.keys(professions).length > 0 && Object.keys(qualities).length > 0)
@@ -171,13 +174,16 @@ const EditUserPage = () => {
                                 label={"Choose your qualities"}
                                 error={errors.qualities}
                             />
-                            <button
-                                type={"submit"}
-                                className={"btn btn-success w-100 mx-auto"}
-                                disabled={!isValid}
-                            >
-                                        Save info
-                            </button>
+                            <div className={"d-flex col"}>
+                                <button type={"button"} className={"btn btn-danger w-50 m-1"} onClick={handleClick}>Cancel</button>
+                                <button
+                                    type={"submit"}
+                                    className={"btn btn-success w-50 mx-auto m-1"}
+                                    disabled={!isValid}
+                                >
+                                    Save info
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
