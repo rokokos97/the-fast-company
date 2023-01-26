@@ -55,7 +55,7 @@ const EditUserPage = () => {
                 ...prevState,
                 ...data,
                 profession: profession._id,
-                qualities: transformData(qualities)
+                id: transformData(qualities)
             }
         )));
         api.professions.fetchAll().then((data) => {

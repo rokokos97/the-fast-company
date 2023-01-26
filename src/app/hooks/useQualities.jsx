@@ -14,57 +14,19 @@ export const QualitiesProvider = ({ children }) => {
     useEffect(() => {
         const getQualities = async () => {
             try {
-                const qualities = await qualityService.get();
+                const qualities = await qualityService.fetchAll();
                 setQualities(qualities.content);
                 setIsLoading(false);
             } catch (error) {
-                const { message } = error.response.data;
-                toast.error(message);
-                setError(message);
+                catchError(error);
             }
         };
         getQualities();
     }, []);
     const catchError = (error) => {
         const { message } = error.response.data;
+        toast.error(message);
         setError(message);
-    };
-    const getQuality = (id) => {
-        return qualities.find((quality) => quality._id === id);
-    };
-    const addQuality = async (data) => {
-        try {
-            const { content } = await qualityService.create(data);
-            setQualities(prevState => [...prevState, content]);
-            return content;
-        } catch (error) {
-            catchError(error);
-        }
-    };
-    const deleteQuality = async (id) => {
-        try {
-            const { content } = await qualityService.delete(id);
-            setQualities(prevState => {
-                return prevState.filter((item) => item._id !== content._id);
-            });
-            return content;
-        } catch (error) {
-            catchError(error);
-        }
-    };
-    const updateQuality = async ({ _id: id, ...data }) => {
-        try {
-            const { content } = await qualityService.update(id, data);
-            setQualities(prevState => prevState.map((item) => {
-                if (item._id === content._id) {
-                    return content;
-                }
-                return item;
-            }));
-            return content;
-        } catch (error) {
-            catchError(error);
-        }
     };
     useEffect(() => {
         if (error !== null) {
@@ -74,11 +36,7 @@ export const QualitiesProvider = ({ children }) => {
     }, [error]);
     return <QualitiesContext.Provider value={
         {
-            qualities,
-            getQuality,
-            updateQuality,
-            addQuality,
-            deleteQuality
+            qualities
         }
     }>
         {!isLoading
