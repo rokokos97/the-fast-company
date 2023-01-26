@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create professionService.js&#10;create useProfessions.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create qualityService.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/qualityService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/qualityService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +83,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/app/hooks" />
       <recent name="$PROJECT_DIR$/src/app/services" />
+      <recent name="$PROJECT_DIR$/src/app/hooks" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/app/api" />
       <recent name="$PROJECT_DIR$/src/app/components/common" />
@@ -125,13 +124,6 @@
       <workItem from="1674577711290" duration="657000" />
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
-    </task>
-    <task id="LOCAL-00076" summary="login.jsx =&gt; add method toggleFormType">
-      <created>1673020059684</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1673020059684</updated>
     </task>
     <task id="LOCAL-00077" summary="login.jsx =&gt; add changing form register&lt;=&gt;login">
       <created>1673023188530</created>
@@ -469,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674691174546</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="create qualityService.js">
+      <created>1674731320587</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1674731320589</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add  CheckBoxField in loginForm.jsx" />
     <MESSAGE value="install Yup" />
     <MESSAGE value="add validationSchema for Yup" />
     <MESSAGE value="refactoring and debug =&gt; registerForm.jsx =&gt; &lt;SelectedField&gt; add name=&quot;professions&quot;" />
@@ -512,7 +510,8 @@
     <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error" />
     <MESSAGE value="create professionService.js" />
     <MESSAGE value="create professionService.js&#10;create useProfessions.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="create professionService.js&#10;create useProfessions.jsx" />
+    <MESSAGE value="create qualityService.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="create qualityService.js" />
   </component>
   <component name="regexState">
     <option name="map">
