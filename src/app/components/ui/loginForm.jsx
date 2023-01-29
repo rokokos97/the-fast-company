@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from "react";
-// import { validator } from "../../utils/validator";
+import { useAuth } from "../../hooks/useAuth";
 import TextFiled from "../common/form/textField";
 import CheckBoxField from "../common/form/checkBoxField";
 import * as yup from "yup";
+import { useHistory } from "react-router-dom";
 
 const LoginForm = () => {
     const [data, setData] = useState({ email: "", password: "", stayOn: false });
     const [errors, setErrors] = useState({});
-
+    const { logIn } = useAuth();
+    const history = useHistory();
     const validateSchema = yup.object().shape({
         password: yup.string()
-            .required("Password is required")
-            .matches(/(?=.*[A-Z])/, "Password must contain capital latter")
-            .matches(/(?=.*[0-9])/, "Password must contain number")
-            .matches(/(?=.*[_!$%&*#])/, "Password must contain on of specific symbol _!$%&*#")
-            .matches(/(?=.{8,})/, "Password must contain at least 8 characters"),
+            .required("Password is required"),
+        /* .matches(/(?=.*[A-Z])/, "Password must contain capital latter")
+          .matches(/(?=.*[0-9])/, "Password must contain number")
+          .matches(/(?=.*[_!$%&*#])/, "Password must contain on of specific symbol _!$%&*#")
+          .matches(/(?=.{8,})/, "Password must contain at least 8 characters"), */
         email: yup.string()
             .required("Email is required")
             .email("Email is not correct")
@@ -23,26 +25,18 @@ const LoginForm = () => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
     };
-    const handelSubmit = (e) => {
+    const handelSubmit = async (e) => {
         e.preventDefault();
         const isValid = validate();
         if (!isValid) return;
-        console.log(data);
+        try {
+            await logIn(data);
+            history.push("/");
+        } catch (error) {
+            setErrors(error);
+        }
     };
     useEffect(() => { validate(); }, [data]);
-
-    // const validatorConfig = {
-    //     email: {
-    //         isRequired: { message: "Email is required" },
-    //         isEmail: { message: "Email is not correct" }
-    //     },
-    //     password: {
-    //         isRequired: { message: "Password is required" },
-    //         isContainCapital: { message: "Password must contain capital latter" },
-    //         isContainDigit: { message: "Password must contain number" },
-    //         min: { message: "Password must contain at least 8 characters", value: 8 }
-    //     }
-    // };
     const validate = () => {
         // const errors = validator(data, validatorConfig);
         validateSchema

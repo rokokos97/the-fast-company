@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="cath error in useAuth.jsx and show it in registerForm.jsx">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/loscalStorageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/loscalStorageService.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useAuth.jsx =&gt; add new method logIn&#10;transfer &quot;data&quot; from loginForm.jsx to logIn()">
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="week_5_filtration" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,8 +37,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="develop_pagination_homework" />
-                    <option name="lastUsedInstant" value="1671635075" />
+                    <option name="branchName" value="week_16_logIn_develop" />
+                    <option name="lastUsedInstant" value="1674995280" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -64,25 +61,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "editing.templates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rokokos97/WebstormProjects/the-fast-company&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -126,28 +123,8 @@
       <workItem from="1674577711290" duration="657000" />
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
-      <workItem from="1674836500249" duration="22756000" />
-    </task>
-    <task id="LOCAL-00100" summary="refactoring and debug =&gt; registerForm.jsx =&gt; &lt;SelectedField&gt; add name=&quot;professions&quot;">
-      <created>1673183651268</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1673183651268</updated>
-    </task>
-    <task id="LOCAL-00101" summary="App.js =&gt; add optional parameter :edit?">
-      <created>1673629918253</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1673629918253</updated>
-    </task>
-    <task id="LOCAL-00102" summary="create =&gt; editUserPage.jsx">
-      <created>1673631457544</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1673631457544</updated>
+      <workItem from="1674836500249" duration="23000000" />
+      <workItem from="1675001433807" duration="3298000" />
     </task>
     <task id="LOCAL-00103" summary="editUserPage.jsx transfer user data from api to editUserPage.jsx">
       <created>1673694534855</created>
@@ -471,7 +448,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674993779217</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="catch error in useAuth.jsx and show it in registerForm.jsx">
+      <created>1674995106119</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1674995106119</updated>
+    </task>
+    <task id="LOCAL-00150" summary="add on more rules to registerForm.jsx password">
+      <created>1675001972243</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1675001972244</updated>
+    </task>
+    <task id="LOCAL-00151" summary="useAuth.jsx =&gt; add new method logIn&#10;transfer &quot;data&quot; from loginForm.jsx to logIn()">
+      <created>1675005145519</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1675005145519</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,9 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create &quot;hooks&quot; folder&#10;add useUsers.jsx =&gt; creatr useUser&#10;&#10;use UserProvider in [layout].users.jsx" />
-    <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add new state:&#10;-users&#10;-isLoading&#10;-errors&#10;add method getUsers&#10;add method catch Error" />
-    <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error" />
     <MESSAGE value="create professionService.js" />
     <MESSAGE value="create professionService.js&#10;create useProfessions.jsx" />
     <MESSAGE value="add useQualities&#10;change logic in qualitiesList.jsx and qualitie.jsx" />
@@ -514,7 +509,10 @@
     <MESSAGE value="add methods to localServiceService" />
     <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx like validation errors" />
     <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="cath error in useAuth.jsx and show it in registerForm.jsx" />
+    <MESSAGE value="catch error in useAuth.jsx and show it in registerForm.jsx" />
+    <MESSAGE value="add on more rules to registerForm.jsx password" />
+    <MESSAGE value="useAuth.jsx =&gt; add new method logIn&#10;transfer &quot;data&quot; from loginForm.jsx to logIn()" />
+    <option name="LAST_COMMIT_MESSAGE" value="useAuth.jsx =&gt; add new method logIn&#10;transfer &quot;data&quot; from loginForm.jsx to logIn()" />
   </component>
   <component name="regexState">
     <option name="map">

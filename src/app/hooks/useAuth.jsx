@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 import userService from "../services/userService";
@@ -35,6 +35,30 @@ const AuthProvider = ({ children }) => {
             }
         }
     }
+    async function logIn({ email, password }) {
+        const url = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env.REACT_APP_FIREBASE_KEY}`;
+        try {
+            const { data } = await httpAuth.post(url, {
+                email,
+                password,
+                returnSecureToken: true
+            });
+            setTokens(data);
+        } catch (error) {
+            console.log("error", error);
+            catchError(error);
+            const { code, message } = error.response.data.error;
+            if (code === 400) {
+                if (message === "EMAIL_NOT_FOUND") {
+                    const errorObject = { email: "User with this email does not exist" };
+                    throw errorObject;
+                } else if (message === "INVALID_PASSWORD") {
+                    const errorObject = { password: "Password for this email is not correct" };
+                    throw errorObject;
+                }
+            }
+        }
+    }
     async function createUser(data) {
         try {
             const { content } = userService.create(data);
@@ -54,7 +78,7 @@ const AuthProvider = ({ children }) => {
         }
     }, [error]);
     return (
-        <AuthContext.Provider value={{ signUp, currentUser }}>
+        <AuthContext.Provider value={{ signUp, logIn, currentUser }}>
             { children }
         </AuthContext.Provider>
     );

@@ -4,6 +4,7 @@ export function validator(data, config) {
         const emailRegEx = /\S+@\S+\.\S+/g;
         const capitalRegEx = /[A-Z]+/g;
         const digitRegEx = /\d+/g;
+        const specificSymbol = /[_!$%&*#]/g;
         let statusValidate;
         switch (validateMethod) {
             case "isRequired":
@@ -19,6 +20,9 @@ export function validator(data, config) {
                 break;
             case "isContainDigit":
                 statusValidate = !digitRegEx.test(data);
+                break;
+            case "isContainSpecialSymbol":
+                statusValidate = !specificSymbol.test(data);
                 break;
             case "min":
                 statusValidate = data.length <= config.value;
