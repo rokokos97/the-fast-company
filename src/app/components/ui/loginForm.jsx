@@ -13,10 +13,10 @@ const LoginForm = () => {
     const validateSchema = yup.object().shape({
         password: yup.string()
             .required("Password is required"),
-            // .matches(/(?=.*[A-Z])/, "Password must contain capital latter")
-            // .matches(/(?=.*[0-9])/, "Password must contain number")
-            // .matches(/(?=.*[_!$%&*#])/, "Password must contain on of specific symbol _!$%&*#")
-            // .matches(/(?=.{8,})/, "Password must contain at least 8 characters"),
+        /* .matches(/(?=.*[A-Z])/, "Password must contain capital latter")
+          .matches(/(?=.*[0-9])/, "Password must contain number")
+          .matches(/(?=.*[_!$%&*#])/, "Password must contain on of specific symbol _!$%&*#")
+          .matches(/(?=.{8,})/, "Password must contain at least 8 characters"), */
         email: yup.string()
             .required("Email is required")
             .email("Email is not correct")

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add on more rules to registerForm.jsx password">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useAuth.jsx =&gt; add new method logIn&#10;transfer &quot;data&quot; from loginForm.jsx to logIn()">
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,14 +124,7 @@
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
       <workItem from="1674836500249" duration="23000000" />
-      <workItem from="1675001433807" duration="2907000" />
-    </task>
-    <task id="LOCAL-00102" summary="create =&gt; editUserPage.jsx">
-      <created>1673631457544</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1673631457544</updated>
+      <workItem from="1675001433807" duration="3298000" />
     </task>
     <task id="LOCAL-00103" summary="editUserPage.jsx transfer user data from api to editUserPage.jsx">
       <created>1673694534855</created>
@@ -471,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675001972244</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="useAuth.jsx =&gt; add new method logIn&#10;transfer &quot;data&quot; from loginForm.jsx to logIn()">
+      <created>1675005145519</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1675005145519</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error" />
     <MESSAGE value="create professionService.js" />
     <MESSAGE value="create professionService.js&#10;create useProfessions.jsx" />
     <MESSAGE value="add useQualities&#10;change logic in qualitiesList.jsx and qualitie.jsx" />
@@ -514,7 +511,8 @@
     <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx" />
     <MESSAGE value="catch error in useAuth.jsx and show it in registerForm.jsx" />
     <MESSAGE value="add on more rules to registerForm.jsx password" />
-    <option name="LAST_COMMIT_MESSAGE" value="add on more rules to registerForm.jsx password" />
+    <MESSAGE value="useAuth.jsx =&gt; add new method logIn&#10;transfer &quot;data&quot; from loginForm.jsx to logIn()" />
+    <option name="LAST_COMMIT_MESSAGE" value="useAuth.jsx =&gt; add new method logIn&#10;transfer &quot;data&quot; from loginForm.jsx to logIn()" />
   </component>
   <component name="regexState">
     <option name="map">
