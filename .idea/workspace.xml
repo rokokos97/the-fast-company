@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="catch error in useAuth.jsx and show it in registerForm.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add on more rules to registerForm.jsx password">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utils/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,14 +126,7 @@
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
       <workItem from="1674836500249" duration="23000000" />
-      <workItem from="1675001433807" duration="510000" />
-    </task>
-    <task id="LOCAL-00101" summary="App.js =&gt; add optional parameter :edit?">
-      <created>1673629918253</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1673629918253</updated>
+      <workItem from="1675001433807" duration="2907000" />
     </task>
     <task id="LOCAL-00102" summary="create =&gt; editUserPage.jsx">
       <created>1673631457544</created>
@@ -471,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674995106119</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="add on more rules to registerForm.jsx password">
+      <created>1675001972243</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1675001972244</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add new state:&#10;-users&#10;-isLoading&#10;-errors&#10;add method getUsers&#10;add method catch Error" />
     <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error" />
     <MESSAGE value="create professionService.js" />
     <MESSAGE value="create professionService.js&#10;create useProfessions.jsx" />
@@ -514,7 +513,8 @@
     <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx like validation errors" />
     <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx" />
     <MESSAGE value="catch error in useAuth.jsx and show it in registerForm.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="catch error in useAuth.jsx and show it in registerForm.jsx" />
+    <MESSAGE value="add on more rules to registerForm.jsx password" />
+    <option name="LAST_COMMIT_MESSAGE" value="add on more rules to registerForm.jsx password" />
   </component>
   <component name="regexState">
     <option name="map">
