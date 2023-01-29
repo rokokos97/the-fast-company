@@ -45,7 +45,6 @@ const AuthProvider = ({ children }) => {
             });
             setTokens(data);
         } catch (error) {
-            console.log("error", error);
             catchError(error);
             const { code, message } = error.response.data.error;
             if (code === 400) {
