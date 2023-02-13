@@ -11,7 +11,6 @@ const LoginForm = () => {
     const [enterError, setEnterError] = useState(null);
     const { logIn } = useAuth();
     const history = useHistory();
-    console.log("history.location.state", history.location.state?.from?.pathname);
     const validateSchema = yup.object().shape({
         password: yup.string()
             .required("Password is required"),
@@ -34,7 +33,6 @@ const LoginForm = () => {
         if (!isValid) return;
         try {
             await logIn(data);
-            console.log(history.location.state.from);
             history.push(
                 history.location.state
                     ? history.location.state.from.pathname

@@ -13,10 +13,9 @@ import { useHistory } from "react-router-dom";
 const RegisterForm = () => {
     const history = useHistory();
     const { qualities } = useQualities();
-    const newQualities = qualities.map((q) => ({ label: q.name, value: q._id }));
     const { professions } = useProfessions();
-    const newProfessions = professions.map((p) => ({ label: p.name, value: p._id }));
-    // const newProfessions = professions.map((p)=> name: )
+    const qualitiesList = qualities.map((q) => ({ label: q.name, value: q._id }));
+    const professionsList = professions.map((p) => ({ label: p.name, value: p._id }));
     const [data, setData] = useState({
         email: "",
         name: "",
@@ -106,7 +105,7 @@ const RegisterForm = () => {
                 label={"Choose your profession"}
                 name={"profession"}
                 defaultOption={"Choose..."}
-                options={newProfessions}
+                options={professionsList}
                 onChange={handelChange}
                 value={data.profession}
                 error={errors.profession}
@@ -121,7 +120,7 @@ const RegisterForm = () => {
                 onChange={handelChange}
             />
             <MultiSelectField
-                options={newQualities}
+                options={qualitiesList}
                 onChange={handelChange}
                 defaultOption={data.qualities}
                 name={"qualities"}

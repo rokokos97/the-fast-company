@@ -24,7 +24,6 @@ export const CommentProvider = ({ children }) => {
             userId: currentUser._id,
             _id: nanoid()
         };
-        console.log(comment);
         try {
             const { content } = await commentService.createComment(comment);
             setComments(prevState => [...prevState, content]);
@@ -36,7 +35,6 @@ export const CommentProvider = ({ children }) => {
         try {
             const { content } = await commentService.getComment(userId);
             setComments(content);
-            console.log("content", content);
         } catch (error) {
             catchError(error);
         } finally {
@@ -51,7 +49,6 @@ export const CommentProvider = ({ children }) => {
                     prevState.filter((c) => c._id !== id)
                 );
             }
-            console.log("content", content);
         } catch (error) {
             catchError(error);
         }
