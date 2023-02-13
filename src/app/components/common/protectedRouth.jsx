@@ -4,7 +4,6 @@ import { Route, Redirect } from "react-router-dom";
 import PropTypes from "prop-types";
 const ProtectedRouth = ({ component: Component, children, ...rest }) => {
     const { currentUser } = useAuth();
-    console.log(currentUser);
     return <Route
         {...rest}
         render={(props) => {
