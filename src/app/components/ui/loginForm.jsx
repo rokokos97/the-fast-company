@@ -33,6 +33,7 @@ const LoginForm = () => {
         const isValid = validate();
         if (!isValid) return;
         try {
+            console.log(data);
             await logIn(data);
             console.log(history.location.state.from);
             history.push(
