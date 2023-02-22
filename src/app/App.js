@@ -6,40 +6,38 @@ import Main from "./layouts/main";
 import NavBar from "./components/ui/navBar";
 import AuthProvider from "./hooks/useAuth";
 import ProtectedRouth from "./components/common/protectedRouth";
-import { ProfessionProvider } from "./hooks/useProfessions";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import LogOut from "./layouts/logOut";
 import { useDispatch } from "react-redux";
 import { loadQualitiesList } from "./store/qualities";
-
+import { loadProfessionsList } from "./store/professions";
 function App() {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(loadQualitiesList());
+        dispatch(loadProfessionsList());
     }, []);
     return (
         <div>
             <AuthProvider>
                 <NavBar />
-                <ProfessionProvider>
-                    <Switch>
-                        <ProtectedRouth
-                            path="/users/:userId?/:edit?"
-                            component={Users} />
-                        <Route
-                            path="/login/:type?"
-                            component={Login} />
-                        <Route
-                            path="/"
-                            exact component={Main} />
-                        <Route
-                            path="/logout"
-                            exact component={LogOut} />
-                        <Redirect
-                            to="/" />
-                    </Switch>
-                </ProfessionProvider>
+                <Switch>
+                    <ProtectedRouth
+                        path="/users/:userId?/:edit?"
+                        component={Users} />
+                    <Route
+                        path="/login/:type?"
+                        component={Login} />
+                    <Route
+                        path="/"
+                        exact component={Main} />
+                    <Route
+                        path="/logout"
+                        exact component={LogOut} />
+                    <Redirect
+                        to="/" />
+                </Switch>
             </AuthProvider>
             <ToastContainer/>
         </div>

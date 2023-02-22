@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="qualitiesList.jsx =&gt; add useEffect (11-13)">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create professions.js;&#10;create new Slice;&#10;add professionReducer to rootReducer;&#10;change useProfessions to useSelector(getProfession);">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/qualities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/qualities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/profession.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/profession.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/professions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/professions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +25,17 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="week_5_filtration" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
@@ -39,8 +46,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="develop_pagination_homework" />
-                    <option name="lastUsedInstant" value="1671635075" />
+                    <option name="branchName" value="week_20_redux_professions_develop" />
+                    <option name="lastUsedInstant" value="1677081751" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -55,6 +62,14 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e0a41133-d513-4f38-800a-03bc48b45c97" />
+        <option name="url" value="git@github.com:/rokokos97/the-fast-company.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -63,32 +78,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/rokokos97/WebstormProjects/the-fast-company&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/store",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/store" />
       <recent name="$PROJECT_DIR$/src/app/services" />
       <recent name="$PROJECT_DIR$/src/app/hooks" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/app" />
-      <recent name="$PROJECT_DIR$/src/app/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app" />
@@ -134,21 +149,7 @@
       <workItem from="1676371033285" duration="900000" />
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
-      <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00163" summary="httpService.js =&gt; add refreshing Token inside request!">
-      <created>1675247225051</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1675247225051</updated>
-    </task>
-    <task id="LOCAL-00164" summary="httpService.js =&gt; transform request data =&gt; setToken">
-      <created>1675247806948</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1675247806948</updated>
+      <workItem from="1677067122908" duration="15601000" />
     </task>
     <task id="LOCAL-00165" summary="httpService.js =&gt; modify token before set =&gt;">
       <created>1675249699428</created>
@@ -479,7 +480,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677079690075</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="qualities.js =&gt; add lastFetch: null to initialState&#10;create function isOutdated()">
+      <created>1677080516094</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1677080516094</updated>
+    </task>
+    <task id="LOCAL-00213" summary="create professions.js;&#10;create new Slice;&#10;add professionReducer to rootReducer;&#10;change useProfessions to useSelector(getProfession);">
+      <created>1677087212137</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1677087212137</updated>
+    </task>
+    <option name="localTasksCounter" value="214" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,8 +512,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="addCommentForm.jsx =&gt; delete all users component" />
-    <MESSAGE value="useComment.jsx =&gt; add method createComment(data)" />
     <MESSAGE value="create new service =&gt; commentService.js" />
     <MESSAGE value="add request to server and save new comment in firebase" />
     <MESSAGE value="commentService.js =&gt; add method getComments from base." />
@@ -522,7 +535,9 @@
     <MESSAGE value="qualities.js =&gt; add new selector getQualitiesByIds" />
     <MESSAGE value="delete QualitiesProvider in App.js" />
     <MESSAGE value="qualitiesList.jsx =&gt; add useEffect (11-13)" />
-    <option name="LAST_COMMIT_MESSAGE" value="qualitiesList.jsx =&gt; add useEffect (11-13)" />
+    <MESSAGE value="qualities.js =&gt; add lastFetch: null to initialState&#10;create function isOutdated()" />
+    <MESSAGE value="create professions.js;&#10;create new Slice;&#10;add professionReducer to rootReducer;&#10;change useProfessions to useSelector(getProfession);" />
+    <option name="LAST_COMMIT_MESSAGE" value="create professions.js;&#10;create new Slice;&#10;add professionReducer to rootReducer;&#10;change useProfessions to useSelector(getProfession);" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
