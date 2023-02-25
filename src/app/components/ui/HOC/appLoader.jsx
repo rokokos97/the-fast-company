@@ -14,12 +14,11 @@ const AppLoader = ({ children }) => {
         if (isLoggedIn) {
             dispatch(loadUsersList());
         }
-    }, []);
+    }, [isLoggedIn]);
     if (usersStatusLoading) return "Loading...";
     return children;
 };
-AppLoader.PropTypes = {
-    children: PropTypes.oneOfType([
-        PropTypes.arrayOf(PropTypes.node), PropTypes.node])
+AppLoader.propTypes = {
+    children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
 };
 export default AppLoader;

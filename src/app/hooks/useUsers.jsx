@@ -12,7 +12,7 @@ const UserProvider = ({ children }) => {
     const [users, setUsers] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
-    const { currentUser } = useAuth();
+    const currentUser = useAuth();
     useEffect(() => {
         getUsers();
     }, []);

@@ -11,8 +11,7 @@ const UsersLoader = ({ children }) => {
     if (!dataStatus) return "Loading...";
     return children;
 };
-UsersLoader.PropTypes = {
-    children: PropTypes.oneOfType([
-        PropTypes.arrayOf(PropTypes.node), PropTypes.node])
+UsersLoader.propTypes = {
+    children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
 };
 export default UsersLoader;
