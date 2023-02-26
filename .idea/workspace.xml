@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="searching errors(">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/commentsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/commentsList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/HOC/appLoader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/HOC/appLoader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/logOut.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/logOut.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="debug">
       <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="week_5_filtration" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,8 +38,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="develop_pagination_homework" />
-                    <option name="lastUsedInstant" value="1671635075" />
+                    <option name="branchName" value="week_20_updateUser_develop" />
+                    <option name="lastUsedInstant" value="1677417520" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -148,13 +134,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00188" summary="add request to server and save new comment in firebase">
-      <created>1675849872396</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1675849872396</updated>
     </task>
     <task id="LOCAL-00189" summary="commentService.js =&gt; add method getComments from base.">
       <created>1675851294580</created>
@@ -492,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677412156808</updated>
     </task>
-    <option name="localTasksCounter" value="237" />
+    <task id="LOCAL-00237" summary="debug">
+      <created>1677417492520</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1677417492520</updated>
+    </task>
+    <option name="localTasksCounter" value="238" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="qualities.js =&gt; add new selector getQualitiesByIds" />
     <MESSAGE value="delete QualitiesProvider in App.js" />
     <MESSAGE value="qualitiesList.jsx =&gt; add useEffect (11-13)" />
     <MESSAGE value="create professions.js &#10;create outdate.js&#10;realise logic like qualities.js" />
@@ -571,7 +556,8 @@
     <MESSAGE value="debug propTypes" />
     <MESSAGE value="debugging" />
     <MESSAGE value="searching errors(" />
-    <option name="LAST_COMMIT_MESSAGE" value="searching errors(" />
+    <MESSAGE value="debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug" />
   </component>
   <component name="regexState">
     <option name="map">
