@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add comment model">
-      <change beforePath="$PROJECT_DIR$/server/models/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Token.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Token.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="all models complete">
+      <change afterPath="$PROJECT_DIR$/server/routes/auth.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/comment.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/profession.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/quality.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/user.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,14 +143,7 @@
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
       <workItem from="1677671486151" duration="1703000" />
-      <workItem from="1678383970292" duration="21183000" />
-    </task>
-    <task id="LOCAL-00210" summary="delete QualitiesProvider in App.js">
-      <created>1677078103675</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
-      <option name="project" value="LOCAL" />
-      <updated>1677078103675</updated>
+      <workItem from="1678383970292" duration="23254000" />
     </task>
     <task id="LOCAL-00211" summary="qualitiesList.jsx =&gt; add useEffect (11-13)">
       <created>1677079690075</created>
@@ -482,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678480362432</updated>
     </task>
-    <option name="localTasksCounter" value="259" />
+    <task id="LOCAL-00259" summary="all models complete">
+      <created>1678480912519</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1678480912520</updated>
+    </task>
+    <option name="localTasksCounter" value="260" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +537,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create HOC =&gt; appLoader.jsx;&#10;users.js =&gt; add selector getUsersLoadingStatus();&#10;users.jsx =&gt; delete &lt;UserProvider&gt;" />
     <MESSAGE value="delete useAuth() from =&gt;&#10;comment.jsx&#10;users.js =&gt; export const getCurrentUserData(125);" />
     <MESSAGE value="debug propTypes" />
     <MESSAGE value="debugging" />
@@ -556,7 +561,8 @@
     <MESSAGE value="add data to db" />
     <MESSAGE value="add user model" />
     <MESSAGE value="add comment model" />
-    <option name="LAST_COMMIT_MESSAGE" value="add comment model" />
+    <MESSAGE value="all models complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="all models complete" />
   </component>
   <component name="regexState">
     <option name="map">
