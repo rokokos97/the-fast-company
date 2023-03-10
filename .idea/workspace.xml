@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create models data and import it to initDatabase.js">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add data to db">
+      <change afterPath="$PROJECT_DIR$/server/models/Comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/Token.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startUp/initDatabase.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/startUp/initDatabase.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,14 +139,7 @@
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
       <workItem from="1677671486151" duration="1703000" />
-      <workItem from="1678383970292" duration="16745000" />
-    </task>
-    <task id="LOCAL-00207" summary="add folder store=&gt; add createStore.js =&gt;export function createStore()">
-      <created>1677068618499</created>
-      <option name="number" value="00207" />
-      <option name="presentableId" value="LOCAL-00207" />
-      <option name="project" value="LOCAL" />
-      <updated>1677068618499</updated>
+      <workItem from="1678383970292" duration="19432000" />
     </task>
     <task id="LOCAL-00208" summary="change qualities from useQualities to useSelector(getQualities) in : &#10;registerForm.jsx&#10;editUserPage.jsx&#10;qualitiesList.jsx">
       <created>1677075934376</created>
@@ -482,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678461082787</updated>
     </task>
-    <option name="localTasksCounter" value="256" />
+    <task id="LOCAL-00256" summary="add data to db">
+      <created>1678463002710</created>
+      <option name="number" value="00256" />
+      <option name="presentableId" value="LOCAL-00256" />
+      <option name="project" value="LOCAL" />
+      <updated>1678463002710</updated>
+    </task>
+    <option name="localTasksCounter" value="257" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="users.js =&gt; add export const getCurrentUser = () =&gt; (state) =&gt; state.users.auth.userId;&#10;&#10;usersListPage.jsx =&gt; const { currentUser } = useSelector(getCurrentUser());" />
     <MESSAGE value="create HOC =&gt; usersLoader.jsx" />
     <MESSAGE value="create HOC =&gt; appLoader.jsx;&#10;users.js =&gt; add selector getUsersLoadingStatus();&#10;uusers.jsx =&gt; delete &lt;UserProvider&gt;" />
     <MESSAGE value="create HOC =&gt; appLoader.jsx;&#10;users.js =&gt; add selector getUsersLoadingStatus();&#10;users.jsx =&gt; delete &lt;UserProvider&gt;" />
@@ -556,7 +557,8 @@
     <MESSAGE value="create startUp directory;&#10;create initDatabase.js;&#10;add initDatabase();&#10;import initDatabase() to app.js;" />
     <MESSAGE value="create mock data and import it to initDatabase.js" />
     <MESSAGE value="create models data and import it to initDatabase.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="create models data and import it to initDatabase.js" />
+    <MESSAGE value="add data to db" />
+    <option name="LAST_COMMIT_MESSAGE" value="add data to db" />
   </component>
   <component name="regexState">
     <option name="map">
