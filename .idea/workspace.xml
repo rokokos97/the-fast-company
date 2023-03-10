@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="install nodemon cross-env">
-      <change afterPath="$PROJECT_DIR$/server/startUp/initDatabase.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create startUp directory;&#10;create initDatabase.js;&#10;add initDatabase();&#10;import initDatabase() to app.js;">
+      <change afterPath="$PROJECT_DIR$/server/mock/professions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mock/qualities.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/default.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/default.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startUp/initDatabase.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/startUp/initDatabase.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,14 +139,7 @@
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
       <workItem from="1677671486151" duration="1703000" />
-      <workItem from="1678383970292" duration="12747000" />
-    </task>
-    <task id="LOCAL-00204" summary="useUsers =&gt; add useEffect (19-26)">
-      <created>1677016726676</created>
-      <option name="number" value="00204" />
-      <option name="presentableId" value="LOCAL-00204" />
-      <option name="project" value="LOCAL" />
-      <updated>1677016726676</updated>
+      <workItem from="1678383970292" duration="13440000" />
     </task>
     <task id="LOCAL-00205" summary="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)">
       <created>1677017152698</created>
@@ -484,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678394310757</updated>
     </task>
-    <option name="localTasksCounter" value="253" />
+    <task id="LOCAL-00253" summary="create startUp directory;&#10;create initDatabase.js;&#10;add initDatabase();&#10;import initDatabase() to app.js;">
+      <created>1678458847017</created>
+      <option name="number" value="00253" />
+      <option name="presentableId" value="LOCAL-00253" />
+      <option name="project" value="LOCAL" />
+      <updated>1678458847017</updated>
+    </task>
+    <option name="localTasksCounter" value="254" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="users.js =&gt; correct selector =&gt; authRequestSuccess: (state, action) =&gt; {&#10;                                            state.auth = action.payload;&#10;                                            state.isLoading = true;&#10;                                        }" />
     <MESSAGE value="protectedRouth.jsx =&gt; const isLoggedIn = useSelector(getIsLoggedIn());" />
     <MESSAGE value="users.js =&gt; add initialState parameter =&gt; dataLoaded: false;&#10; usersReceived =&gt; add state.dataLoaded = true;(24);&#10; export const getDataStatus = () =&gt; (state) =&gt; state.users.dataLoaded;(123)" />
     <MESSAGE value="users.js =&gt; add export const getCurrentUser = () =&gt; (state) =&gt; state.users.auth.userId;&#10;&#10;usersListPage.jsx =&gt; const { currentUser } = useSelector(getCurrentUser());" />
@@ -558,7 +557,8 @@
     <MESSAGE value="Create directory Client for all front-end files" />
     <MESSAGE value="Create directory server;&#10;add dependencies;&#10;create app.js" />
     <MESSAGE value="install nodemon cross-env" />
-    <option name="LAST_COMMIT_MESSAGE" value="install nodemon cross-env" />
+    <MESSAGE value="create startUp directory;&#10;create initDatabase.js;&#10;add initDatabase();&#10;import initDatabase() to app.js;" />
+    <option name="LAST_COMMIT_MESSAGE" value="create startUp directory;&#10;create initDatabase.js;&#10;add initDatabase();&#10;import initDatabase() to app.js;" />
   </component>
   <component name="regexState">
     <option name="map">
