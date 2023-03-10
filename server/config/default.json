@@ -1,3 +1,4 @@
 {
-  "port": "8080"
+  "port": "8080",
+  "mongoUri": "mongodb+srv://RostyslavLisovyi:the_fast_company_2023@cluster1.osn2ln5.mongodb.net/TFC?retryWrites=true&w=majority"
 }
