@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create startUp directory;&#10;create initDatabase.js;&#10;add initDatabase();&#10;import initDatabase() to app.js;">
-      <change afterPath="$PROJECT_DIR$/server/mock/professions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mock/qualities.json" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create mock data and import it to initDatabase.js">
+      <change afterPath="$PROJECT_DIR$/server/models/Profession.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/Quality.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startUp/initDatabase.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/startUp/initDatabase.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company",
+    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/server/models",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -87,11 +86,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/models" />
       <recent name="$PROJECT_DIR$/src/app/store" />
       <recent name="$PROJECT_DIR$/src/app/services" />
       <recent name="$PROJECT_DIR$/src/app/hooks" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Client" />
@@ -139,14 +138,7 @@
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
       <workItem from="1677671486151" duration="1703000" />
-      <workItem from="1678383970292" duration="13440000" />
-    </task>
-    <task id="LOCAL-00205" summary="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)">
-      <created>1677017152698</created>
-      <option name="number" value="00205" />
-      <option name="presentableId" value="LOCAL-00205" />
-      <option name="project" value="LOCAL" />
-      <updated>1677017152698</updated>
+      <workItem from="1678383970292" duration="14964000" />
     </task>
     <task id="LOCAL-00206" summary="install reduxjs/toolkit and react-redux">
       <created>1677068221337</created>
@@ -484,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678458847017</updated>
     </task>
-    <option name="localTasksCounter" value="254" />
+    <task id="LOCAL-00254" summary="create mock data and import it to initDatabase.js">
+      <created>1678459339914</created>
+      <option name="number" value="00254" />
+      <option name="presentableId" value="LOCAL-00254" />
+      <option name="project" value="LOCAL" />
+      <updated>1678459339914</updated>
+    </task>
+    <option name="localTasksCounter" value="255" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="protectedRouth.jsx =&gt; const isLoggedIn = useSelector(getIsLoggedIn());" />
     <MESSAGE value="users.js =&gt; add initialState parameter =&gt; dataLoaded: false;&#10; usersReceived =&gt; add state.dataLoaded = true;(24);&#10; export const getDataStatus = () =&gt; (state) =&gt; state.users.dataLoaded;(123)" />
     <MESSAGE value="users.js =&gt; add export const getCurrentUser = () =&gt; (state) =&gt; state.users.auth.userId;&#10;&#10;usersListPage.jsx =&gt; const { currentUser } = useSelector(getCurrentUser());" />
     <MESSAGE value="create HOC =&gt; usersLoader.jsx" />
@@ -558,7 +556,8 @@
     <MESSAGE value="Create directory server;&#10;add dependencies;&#10;create app.js" />
     <MESSAGE value="install nodemon cross-env" />
     <MESSAGE value="create startUp directory;&#10;create initDatabase.js;&#10;add initDatabase();&#10;import initDatabase() to app.js;" />
-    <option name="LAST_COMMIT_MESSAGE" value="create startUp directory;&#10;create initDatabase.js;&#10;add initDatabase();&#10;import initDatabase() to app.js;" />
+    <MESSAGE value="create mock data and import it to initDatabase.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="create mock data and import it to initDatabase.js" />
   </component>
   <component name="regexState">
     <option name="map">
