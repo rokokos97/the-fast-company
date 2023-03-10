@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add user model">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add comment model">
       <change beforePath="$PROJECT_DIR$/server/models/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Token.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Token.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,14 +137,7 @@
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
       <workItem from="1677671486151" duration="1703000" />
-      <workItem from="1678383970292" duration="20860000" />
-    </task>
-    <task id="LOCAL-00209" summary="qualities.js =&gt; add new selector getQualitiesByIds">
-      <created>1677078004704</created>
-      <option name="number" value="00209" />
-      <option name="presentableId" value="LOCAL-00209" />
-      <option name="project" value="LOCAL" />
-      <updated>1677078004704</updated>
+      <workItem from="1678383970292" duration="21183000" />
     </task>
     <task id="LOCAL-00210" summary="delete QualitiesProvider in App.js">
       <created>1677078103675</created>
@@ -483,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678478256026</updated>
     </task>
-    <option name="localTasksCounter" value="258" />
+    <task id="LOCAL-00258" summary="add comment model">
+      <created>1678480362432</created>
+      <option name="number" value="00258" />
+      <option name="presentableId" value="LOCAL-00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1678480362432</updated>
+    </task>
+    <option name="localTasksCounter" value="259" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create HOC =&gt; appLoader.jsx;&#10;users.js =&gt; add selector getUsersLoadingStatus();&#10;uusers.jsx =&gt; delete &lt;UserProvider&gt;" />
     <MESSAGE value="create HOC =&gt; appLoader.jsx;&#10;users.js =&gt; add selector getUsersLoadingStatus();&#10;users.jsx =&gt; delete &lt;UserProvider&gt;" />
     <MESSAGE value="delete useAuth() from =&gt;&#10;comment.jsx&#10;users.js =&gt; export const getCurrentUserData(125);" />
     <MESSAGE value="debug propTypes" />
@@ -557,7 +555,8 @@
     <MESSAGE value="create models data and import it to initDatabase.js" />
     <MESSAGE value="add data to db" />
     <MESSAGE value="add user model" />
-    <option name="LAST_COMMIT_MESSAGE" value="add user model" />
+    <MESSAGE value="add comment model" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comment model" />
   </component>
   <component name="regexState">
     <option name="map">
