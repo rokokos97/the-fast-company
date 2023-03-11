@@ -1,10 +1,11 @@
 const express = require('express');
+// eslint-disable-next-line new-cap
 const router = express.Router({mergeParams: true});
 
-router.get('/comment', async (req, res) => {
+router.get('/', async (req, res) => {
 });
-router.post('/comment', async (req, res) => {
+router.post('/', async (req, res) => {
 });
-router.delete('/comment/:id', async (req, res) => {
+router.delete('/:id', async (req, res) => {
 });
 module.exports = router;
